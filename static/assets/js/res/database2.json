@@ -1,0 +1,57 @@
+{
+    "recipes": [
+        {
+            "name": "Pancakes",
+            "ingredients": [
+                "Flower",
+                "Egg",
+                "Milk",
+                "Butter",
+                "Baking powder",
+                "Sugar"
+            ],
+            "prep_time": 10,
+            "cooking_time": 5,
+            "difficulty": 2,
+            "favourited": false,
+            "author": "Nikolaas Christie"
+        },
+        {
+            "name": "French Toast",
+            "ingredients": [
+                "Flower",
+                "Egg",
+                "Milk",
+                "Butter",
+                "Baking powder"
+            ],
+            "prep_time": 15,
+            "cooking_time": 10,
+            "difficulty": 2,
+            "favourited": true,
+            "author": "Owen Zonneveld"
+        },
+        {
+            "name": "Apple Strudle",
+            "ingredients": [
+                "Egg",
+                "Milk"
+            ],
+            "prep_time": 10,
+            "cooking_time": 10,
+            "difficulty": 4,
+            "favourited": false,
+            "author": "Ozone"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Nikolaas Christie",
+            "followed": true
+        },
+        {
+            "name": "Owen Zonneveld",
+            "followed": false
+        }
+    ]
+}
