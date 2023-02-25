@@ -91,7 +91,7 @@
         <form class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
-            <input style=" margin-left: 12%; width:fit-content;" type="" class="form-control" id="" placeholder="">
+            <input id="submit_name" style=" margin-left: 12%; width:fit-content;" type="" class="form-control" placeholder="">
             <div class="invalid-feedback">
               Please enter a valid pharmacy number.
             </div>
@@ -99,7 +99,7 @@
 
           <div class="mb-3">
               <label style="font-size:18px;" for="">Please add all the ingredients in your recipe.<span class="text-muted"></span></label>
-              <textarea rows = "5" cols = "40" name = "interest_bio" id = "interest_bio" required></textarea> 
+              <textarea rows = "5" cols = "40" name = "interest_bio" id = "submit_ingredients" required></textarea> 
               <!-- <input style="height: 100px; " type="" class="form-control" id="" placeholder=""> -->
               <div class="invalid-feedback">
                 Please enter a valid pharmacy number.
@@ -110,7 +110,7 @@
               <label style="font-size:18px;" for="">What is the total cost of the ingredients?<span class="text-muted"></span></label>
               
 
-              <input  style= " margin-left: 24%; width:50%;"  type="" class="form-control" id="" placeholder=""> 
+              <input style= " margin-left: 24%; width:50%;"  type="" class="form-control" id="submit_cost" placeholder=""> 
               <div class="invalid-feedback">
                 Please enter a valid pharmacy number.
               </div>
@@ -119,7 +119,7 @@
 
           <div class="mb-3">
               <label for="">Please add the steps of your recipe.<span class="text-muted"></span></label>
-              <textarea rows = "10" cols = "40" name = "interest_bio" id = "interest_bio" required></textarea> 
+              <textarea rows = "10" cols = "40" name = "interest_bio" id = "submit_steps" required></textarea> 
 
               <!-- <input style="height: 100px; width:400px;"  type="" class="form-control" id="" placeholder=""> -->
               <div class="invalid-feedback">
@@ -133,14 +133,14 @@
       
               <div class="col-md-6 mb-3">
                   <label style="font-size:16px;" for="firstName">Prep Time (in mins) </label>
-                  <input style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <input id="submit_prep_time" style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
                   <div class="invalid-feedback">
                     Valid Year is required.
                   </div>
                 </div>
                 <div  class="col-md-6 mb-3">
-                  <label style="font-size:16px;" for="firstName">Cook Time (in mins)</label>
-                  <input style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <label  style="font-size:16px;" for="firstName">Cook Time (in mins)</label>
+                  <input id="submit_cook_time" style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
                   <div class="invalid-feedback">
                     Valid Year is required.
                   </div>
@@ -152,12 +152,11 @@
               <label style="margin-bottom: 20px; font-size: 18px;" for="lastName">On a scale of 1-10, how difficult is this dish to make?</label>
               <form >
                 
-                <select style="margin-bottom: 20px;  width:fit-content; width:280px; height:50px; border-color: transparent; border-radius: 10px; padding-right: 10%;"  id="diff" name="diff">
+                <select id="submit_difficulty" style="margin-bottom: 20px;  width:fit-content; width:280px; height:50px; border-color: transparent; border-radius: 10px; padding-right: 10%;"  id="diff" name="diff">
                   <option >Please Select one</option>
                   <option value="easy">1-5 Easy</option>
                   <option value="medium">6-8 Medium</option>
                   <option value="hard">9-10 Hard</option>
-                  
                 </select>
                 
               </form>
@@ -174,7 +173,7 @@
               </div>
 
             </div>
-            <button style="margin-right:20%; float:right; padding-bottom:10px;" type="button" >Save</button> 
+            <button id="submission_button" style="margin-right:20%; float:right; padding-bottom:10px;" type="button">Save</button> 
           </div>                        
         </form>
       </div>
@@ -184,8 +183,26 @@
       import database from "../static/assets/js/res/database_parsing/queries.js"
       
       export function test() {
-        console.log("Test");
+        const name = $('#submit_name').val()
+        const ingredients = $('#submit_ingredients').val().split('\n')
+        const cost = $('#submit_cost').val()
+        const steps = $('#submit_steps').val().split('\n')
+        const prep_time = $('#submit_prep_time').val()
+        const cook_time = $('#submit_cook_time').val()
+        const difficulty = $('#submit_difficulty').val()
+
+        console.log(name)
+        console.log(ingredients)
+        console.log(cost)
+        console.log(steps)
+        console.log(prep_time)
+        console.log(cook_time)
+        console.log(difficulty);
       }
+
+      $('#submission_button').click(function() {
+        test();
+      })
     </script>
   </div>
 
