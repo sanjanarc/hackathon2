@@ -56,7 +56,8 @@ function get_recipe_total_time(recipe) {
 function get_approximate_recipe_cost(recipe) {
     return recipe.ingredients
         .map(ing => { 
-            return get_aproximate_price(ing);}).reduce(add, 0)
+            return get_aproximate_price(ing);
+        }).reduce((x, y) => { return x + y }, 0)
 }
 
 // Filters out the recipes for the time range
