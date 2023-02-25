@@ -58,51 +58,6 @@
     color: #64666ee9;
   }
 
-  /*
-    MAIN PAGE
-  */
-
-  #recipe_image {
-    position: relative;
-    object-fit: cover;
-    height: 500px;
-    width: auto;
-  }
-
-  #recipe_image{
-    position: relative;
-  }
-
-
-  #likes {
-    background-color: #06442080;
-    
-    position: absolute;
-    
-    bottom: 5px;
-    left: 18px;
-    border-radius: 15px;
-    
-    
-  }
-
-  #like_button{
-    height: 50px;
-    color: #FDFAF6;
-  }
-
-  #like_counter{
-    position: relative;
-    font-size: 20px;
-    color: #FDFAF6;
-    
-  }
-
-  #filters{
-    background-color: #E4EFE7;
-    height: 50px;
-    width: 100%;
-  }
 
   /**
 * Desktop Navigation 
