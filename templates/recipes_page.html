@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Recipe Reboot</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <!-- Favicons --> <!--HAVE TO CHANGE THESE -->
+    <link href="../static/assets/img/favicon-32x32.png" rel="icon">
+  
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script>"https://use.fontawesome.com/4190456980.js"</script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!--  Main CSS File -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+  </head>
+  
+  <body id="body">
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!--<h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>*/-->
+    <a href="index.html" class="logo"><img src="../static/assets/img/Free_Sample_By_Wix (1).jpeg" alt="" class="img-fluid"></a>
+    
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul class="menu" >
+        <li><a class="active" href="index.html">Home</a></li>
+
+        <li><a href="create_recipe.html" >Create Recipe</a></li>
+        <li><a href="" onclick="">Favourites</a></li>
+        <li><a href="" >About</a></li>
+
+      </ul>
+    </nav><!-- .navbar -->
+
+    <div id="search_bar">
+      <input type = "text" placeholder="Find Recipes">
+      <a href = "results_page.html">
+        <i class = "fa fa-search"></i>
+      </a>
+    </div>
+
+  </div>
+
+</header><!-- End Header -->
+
+<!-- === Feed === -->
+<div id="feed">
+<div style="height:100%" id="viewRecipeTop">
+
+
+    <h1 style=" font-family: Trirong, serif; text-align: center;"  id="myHeader" >CURRENT RECIPE</h1>  
+    
+    
+
+    <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list-->
+    
+
+    <div style="margin-left: 25%; " class="row">
+      <div class="col-lg-4">
+        <img  src="..//static/assets/img/food2.jpg"  class="img-fluid" id="tm1" alt="">
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <p1 id="prepHeading">PREP TIME</p1> <p2 id="prepTime">&nbsp;</p2>
+        <div class="row"> 
+          <p3 id="cookHeading">COOK TIME</p3> <p4 id="cookTime"> &nbsp; </p4>
+          <p7 id="difficultyHeading">DIFFICULTY</p7> <p8 id="difficultyLevel"> </p8>
+          <p9 id="ingredientHeading">INGREDIENTS</p9>
+          <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list--></div>
+        
+          </div>
+          
+        </div>
+      </div>
+    <br>
+
+
+        
+<div style="margin-left: 25%;" id="prepRecipeSteps">
+
+    <p11 id="preparationHead">PROCEDURE</p11>
+    <ul id="preperationSteps"></ul> <!-- Use this id to ouput the preparation steps-->
+    <p9 id="ingredientHeading">LINK TO YOUTUBE VIDEO</p9> 
+    <a id="yt_link" ></a>  <!-- Use this id to ouput the ingredients list-->
+   
+
+</div>
+<br>
+
+<div style="margin-left: 25%;" id="comment_section">
+
+  <p12 id="preparationHead">COMMENTS</p12>
+  
+ 
+
+</div>
+<br>
+<div style="margin-left:25%;  float:right; margin-right:25%;" id ="author_link">
+  <a href="authors_page.html">Posted by </a>  <!-- add authors name through -->
+</div>
+<br>
+</div>
+
+
+
+
+
+<footer  id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span></span></strong>. All Rights Reserved Recipe Reboot
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+  <script src="../static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
