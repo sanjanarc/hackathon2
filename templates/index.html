@@ -75,68 +75,63 @@
     <h1>
       POPULAR RECIPES
     </h1>
-    <div class = "row align-items-start" id = "selectors">
-      <div class = "col" id = "recipe1" >
-        <div class = "recipe_image">
-          <img class = "img-fluid" src = "../static/assets/img/food1.jpg" style = "object-fit: cover; height: 500px; width: auto">
-          </img>
-          <p id="recipe_title_1">recipe1</p>
-          <div class = row>
-            <div class = "col text-start" id = "num_likes_1">
-              Likes: 15
+    <div id="recipe_super_div">
+      <div class = "row align-items-start" id = "selectors">
+        <div class = "col" id = "recipe1" >
+          <div id = "recipe_image">
+            <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food2.jpg">
+            </img>
+            <div class = "row align-items-center" id = "likes">
+              <a class="like_button" id = "like_button_1" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
+                <span id = heart4>
+                  <i class="fa  fa-heart-o fa-3x" aria-hidden="true" >
+                  </i> 
+                </span>
+              </a>
+              <div class="like-counter" id = "num_likes_1">
+              </div>
             </div>
-            <button type = "button" class = "col-2" id = "like_button_1">
-              Like
-            </button>
-
-          </div>
-
-        </div> 
-        <h class = "recipe_name">
-          recipe1
-        </h>
-      </div>
-      <div class = "col" id = "recipe2" >
-        <div id = "recipe_image">
-          <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food2.jpg">
-            
-          </img>
-          <p id="recipe_title_2">recipe2</p>
-          <div class = row>
-            <div class = "col text-start" id = "num_likes_2">
-              Likes: 15
+          </div> 
+          <h class = "recipe_name" id = "recipe_title_1">
+          </h>
+        </div>
+        <div class = "col" id = "recipe2" >
+          <div id = "recipe_image">
+            <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food2.jpg">
+            </img>
+            <div class = "row align-items-center" id = "likes">
+              <a class="like_button" id="like_button_2" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
+                <span id = heart4>
+                  <i class="fa  fa-heart-o fa-3x" aria-hidden="true"></i> 
+                </span>
+              </a>
+              <div class="like-counter" id = "num_likes_2">
+              </div>
             </div>
-            <button type = "button" class = "col-2" id = "like_button_2">
-              Like
-            </button>
-
-          </div>
-
-
-        </div> 
-        <h class = "recipe_name">
-          recipe1
-        </h>
-      </div>
-      <div class = "col" id = "recipe1">
-        <img class = "img-fluid" src = "../static/assets/img/food3.jpg" style = "object-fit: cover; height: 500px; width: auto">
-
-        </img>
-        <p id="recipe_title_3">recipe3</p>
-        <div class = row>
-          <div class = "col text-start" id = "num_likes_3">
-            Likes: 15
-          </div>
-          <button type = "button" class = "col-2" id = "like_button_3">
-            Like
-          </button>
-
-        </div> 
-        <h id = "recipe_name">
-          recipe1
-        </h>
-      </div>
-    </div> 
+          </div> 
+          <h class = "recipe_name" id = "recipe_title_2">
+          </h>
+        </div>
+        <div class = "col" id = "recipe1">
+          <div id = "recipe_image">
+            <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food2.jpg">
+            </img>
+            <div class = "row align-items-center" id = "likes">
+              <a class="like_button" id="like_button_3" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
+                <span id = heart4>
+                  <i class="fa  fa-heart-o fa-3x" aria-hidden="true" >
+                  </i> 
+                </span>
+              </a>
+              <div class="like-counter" id = "num_likes_3">
+              </div>
+            </div>
+          </div> 
+          <h class = "recipe_name" id = "recipe_title_3">
+          </h>
+        </div>
+      </div> 
+    </div>
   </div>
 
 
@@ -201,24 +196,61 @@
   <script type="module">
     import database from "../static/assets/js/res/database_parsing/queries.js"
 
+
+    function generate_food_div(index) {
+      return `<div class = 'col' id = 'recipe1' >
+        <div id = 'recipe_image'>
+          <img class = 'img-fluid' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
+          </img>
+          <div class = 'row align-items-center' id = 'likes'>
+            <a class='like_button' id = 'like_button_` + index + `' href='http://127.0.0.1:5000/heart' data-gallery='portfolioGallery' class='col feed-lightbox'>
+              <span id = heart4>
+                <i class='fa  fa-heart-o fa-3x' aria-hidden='true' >
+                </i> 
+              </span>
+            </a>
+            <div class='like-counter' id = 'num_likes_` + index + `'>
+            </div>
+          </div>
+        </div> 
+        <h class='recipe_name' id = 'recipe_title_` + index + `'>
+        </h>
+      </div>`
+    }
+
+
+
     export function load_recipe() {
       // Gets all the recipes
-        const recipes = database.get_all_recipes();
-        for (let i = 0; i < 3 && recipes[i] != undefined; i++) {
-          const index = i + 1;
-          const recipe_title = "recipe_title_" + index
-          $('#' + recipe_title).html(recipes[i].name)
+      const recipes = database.get_all_recipes();
 
-          const recipe_likes = "num_likes_" + index
-          $('#' + recipe_likes).html(recipes[i].likes + " Likes")
+      let food_div = $("#recipe_super_div");
+      let total_text = "";
 
-          const like_button = "like_button_" + index;
-          $('#' + like_button).click(
-            function() {
-              database.like_recipe(recipes[i].name);
-            }
-          )
-        }
+      //Adds the row organizer
+      total_text += "<div class = 'row align-items-start' id = 'selectors'>"
+      for (let i = 0; i < recipes.length; i++) {
+        total_text += generate_food_div((i + 1));
+      }
+      total_text += "</div>"
+      food_div.html(total_text);
+
+      // Adds the recipes
+      for (let i = 0; i < recipes.length; i++) {
+        const index = i + 1;
+        const recipe_title = "recipe_title_" + index
+        $('#' + recipe_title).html(recipes[i].name)
+
+        const recipe_likes = "num_likes_" + index
+        $('#' + recipe_likes).html(recipes[i].likes + " Likes")
+
+        const like_button = "like_button_" + index;
+        $('#' + like_button).click(
+          function() {
+            database.like_recipe(recipes[i].name);
+          }
+        )
+      }
     }
 
     window.onload = load_recipe();
