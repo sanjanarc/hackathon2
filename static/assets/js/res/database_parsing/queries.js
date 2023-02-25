@@ -34,7 +34,8 @@ function get_all_recipes() {
 
 // Filters out the recipes for the time range
 function filter_time_range(min, max) {
-    recipes = get_all_recipes();
+    return get_all_recipes().filter(recipe => { return recipe.prep_time >= min && recipe.prep_time <= max; });
+    /*
     filtered = {}
 
     for (recipe in recipes) {
@@ -44,6 +45,7 @@ function filter_time_range(min, max) {
     }
 
     return filtered;
+    */
 }
 
 
