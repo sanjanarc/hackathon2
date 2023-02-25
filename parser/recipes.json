@@ -1,7 +1,7 @@
 {
 	"recipes": [
 		{
-			"title": "No-Bake Nut Cookies",
+			"name": "No-Bake Nut Cookies",
 			"ingredients": [
 				"1 c. firmly packed brown sugar",
 				" 1/2 c. evaporated milk",
@@ -23,10 +23,16 @@
 				" drop and shape into 30 clusters on wax paper.",
 				" Let stand until firm",
 				" about 30 minutes."
-			]
+			],
+			"prep_time": 12,
+			"cooking_time": 24,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Jewell Ball'S Chicken",
+			"name": "Jewell Ball'S Chicken",
 			"ingredients": [
 				"1 small jar chipped beef",
 				" cut up",
@@ -41,10 +47,16 @@
 				" pour over chicken. Bake",
 				" uncovered",
 				" at 275\\u00b0 for 3 hours."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Creamy Corn",
+			"name": "Creamy Corn",
 			"ingredients": [
 				"2 (16 oz.) pkg. frozen corn",
 				" 1 (8 oz.) pkg. cream cheese",
@@ -58,10 +70,16 @@
 			"directions": [
 				"In a slow cooker",
 				" combine all ingredients. Cover and cook on low for 4 hours or until heated through and cheese is melted. Stir well before serving. Yields 6 servings."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Funny",
+			"name": "Chicken Funny",
 			"ingredients": [
 				"1 large whole chicken",
 				" 2 (10 1/2 oz.) cans chicken gravy",
@@ -78,10 +96,16 @@
 				" Put stuffing on top of chicken and gravy",
 				" level.",
 				" Sprinkle shredded cheese on top and bake at 350\\u00b0 for approximately 20 minutes or until golden and bubbly."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Reeses Cups(Candy)  ",
+			"name": "Reeses Cups(Candy)  ",
 			"ingredients": [
 				"1 c. peanut butter",
 				" 3/4 c. graham cracker crumbs",
@@ -93,10 +117,16 @@
 				"Combine first four ingredients and press in 13 x 9-inch ungreased pan.",
 				" Melt chocolate chips and spread over mixture. Refrigerate for about 20 minutes and cut into pieces before chocolate gets hard.",
 				" Keep in refrigerator."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cheeseburger Potato Soup",
+			"name": "Cheeseburger Potato Soup",
 			"ingredients": [
 				"6 baking potatoes",
 				" 1 lb. of extra lean ground beef",
@@ -146,10 +176,16 @@
 				" cook until heated (do not boil).",
 				" Sprinkle with remaining cheese",
 				" bacon and green onions."
-			]
+			],
+			"prep_time": 32,
+			"cooking_time": 64,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Rhubarb Coffee Cake",
+			"name": "Rhubarb Coffee Cake",
 			"ingredients": [
 				"1 1/2 c. sugar",
 				" 1/2 c. butter",
@@ -173,10 +209,16 @@
 				" Mix well.",
 				" Add rhubarb and vanilla.",
 				" Pour into greased 9 x 13-inch pan and add Topping."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Scalloped Corn",
+			"name": "Scalloped Corn",
 			"ingredients": [
 				"1 can cream-style corn",
 				" 1 can whole kernel corn",
@@ -195,10 +237,16 @@
 				" 2 teaspoons of melted butter and pepper and place in a buttered baking dish.",
 				" Dot with remaining 4 teaspoons of butter.",
 				" Bake at 350\\u00b0 for 1 hour."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Nolan'S Pepper Steak",
+			"name": "Nolan'S Pepper Steak",
 			"ingredients": [
 				"1 1/2 lb. round steak (1-inch thick)",
 				" cut into strips",
@@ -222,10 +270,16 @@
 				" Add tomatoes",
 				" green peppers and simmer for 5 minutes.",
 				" Serve over hot cooked rice."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Millionaire Pie",
+			"name": "Millionaire Pie",
 			"ingredients": [
 				"1 large container Cool Whip",
 				" 1 large can crushed pineapple",
@@ -247,10 +301,16 @@
 				" Use top from crust to cover top of pie.",
 				" Chill overnight.",
 				" Makes 2 pies."
-			]
+			],
+			"prep_time": 12,
+			"cooking_time": 24,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Double Cherry Delight",
+			"name": "Double Cherry Delight",
 			"ingredients": [
 				"1 (17 oz.) can dark sweet pitted cherries",
 				" 1/2 c. ginger ale",
@@ -271,10 +331,16 @@
 				" at least 4 hours or overnight.",
 				" Unmold.",
 				" Makes about 5 1/3 cups."
-			]
+			],
+			"prep_time": 11,
+			"cooking_time": 22,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Buckeye Candy",
+			"name": "Buckeye Candy",
 			"ingredients": [
 				"1 box powdered sugar",
 				" 8 oz. soft butter",
@@ -289,10 +355,16 @@
 				" Set in freezer for at least 30 minutes. Melt chocolate chips and paraffin in double boiler.",
 				" Using a toothpick",
 				" dip balls 3/4 of way into chocolate chip and paraffin mixture to make them look like buckeyes."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Quick Barbecue Wings",
+			"name": "Quick Barbecue Wings",
 			"ingredients": [
 				"chicken wings (as many as you need for dinner)",
 				" flour",
@@ -304,10 +376,16 @@
 				" Place fried chicken wings in microwave bowl.",
 				" Stir in barbecue sauce.",
 				" Microwave on High (stir once) for 4 minutes."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Taco Salad Chip Dip",
+			"name": "Taco Salad Chip Dip",
 			"ingredients": [
 				"8 oz. Ortega taco sauce",
 				" 8 oz. sour cream",
@@ -329,10 +407,16 @@
 				" Spread over cream mixture.",
 				" Layer with raw vegetables.",
 				" Top with cheese. Serve with chips."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Pink Stuff(Frozen Dessert)  ",
+			"name": "Pink Stuff(Frozen Dessert)  ",
 			"ingredients": [
 				"1 can pie filling (cherry or strawberry)",
 				" 1 can crushed pineapple",
@@ -345,10 +429,16 @@
 				"Mix all ingredients together.",
 				" Pour into a 9 x 13-inch pan. Freeze until firm.",
 				" Allow to set out approximately 15 minutes before serving."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Fresh Strawberry Pie",
+			"name": "Fresh Strawberry Pie",
 			"ingredients": [
 				"1 baked pie shell",
 				" 1 qt. cleaned strawberries",
@@ -369,10 +459,16 @@
 				" Pour cooled glaze over. Continue layering berries and glaze.",
 				" Refrigerate.",
 				" Serve with whipped cream."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Easy German Chocolate Cake",
+			"name": "Easy German Chocolate Cake",
 			"ingredients": [
 				"1/2 pkg. chocolate fudge cake mix without pudding or 1 Jiffy mix",
 				" 1/2 pkg. white cake mix without pudding or 1 Jiffy mix",
@@ -381,10 +477,16 @@
 			"directions": [
 				"Mix according to directions and add oil.",
 				" Bake in 9 x 13-inch pan."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Broccoli Salad",
+			"name": "Broccoli Salad",
 			"ingredients": [
 				"1 large head broccoli (about 1 1/2 lb.)",
 				" 10 slices bacon",
@@ -400,10 +502,16 @@
 				"Trim off large leaves of broccoli and remove the tough ends of lower stalks. Wash the broccoli thoroughly. Cut the florets and stems into bite-size pieces. Place in a large bowl. Add bacon",
 				" onions and raisins. Combine remaining ingredients",
 				" stirring well. Add dressing to broccoli mixture and toss gently. Cover and refrigerate 2 to 3 hours. Makes about 6 servings."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Strawberry Whatever",
+			"name": "Strawberry Whatever",
 			"ingredients": [
 				"1 lb. frozen strawberries in juice",
 				" 1 small can crushed pineapple",
@@ -423,10 +531,16 @@
 				" Add layer of sour cream",
 				" then remaining mixture on top.",
 				" Gel and serve."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Eggless Milkless Applesauce Cake",
+			"name": "Eggless Milkless Applesauce Cake",
 			"ingredients": [
 				"3/4 c. sugar",
 				" 1/2 c. shortening",
@@ -446,10 +560,16 @@
 				" Put in a greased and floured loaf pan or tube pan.",
 				" Bake in loaf pan at 350\\u00b0 to 375\\u00b0 for 45 to 60 minutes",
 				" layer pan at 375\\u00b0 for 20 minutes or tube pan at 325\\u00b0 for 1 hour."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Grandma Hanrath'S Banana Breadfort Collins; Colorado  ",
+			"name": "Grandma Hanrath'S Banana Breadfort Collins; Colorado  ",
 			"ingredients": [
 				"1 c. sugar",
 				" 1/2 c. shortening",
@@ -468,10 +588,16 @@
 				" Add nuts.",
 				" Mix well.",
 				" Bake in loaf pan at 350\\u00b0 for 1 hour."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chocolate Frango Mints",
+			"name": "Chocolate Frango Mints",
 			"ingredients": [
 				"1 pkg. devil's food cake mix",
 				" 1 pkg. chocolate fudge pudding mix (instant)",
@@ -485,10 +611,16 @@
 				"Mix ingredients together for 5 minutes.",
 				" Scrape bowl often. Last fold in chocolate chip mints.",
 				" Bake at 350\\u00b0 for 35 to 40 minutes or until done (cake mix directions)."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cuddy Farms Marinated Turkey",
+			"name": "Cuddy Farms Marinated Turkey",
 			"ingredients": [
 				"2 c. 7-Up or Sprite",
 				" 1 c. vegetable oil",
@@ -499,10 +631,16 @@
 				"Buy whole turkey breast",
 				" remove all skin and bones. Cut into pieces about the size of your hand. Pour marinade over turkey and refrigerate for at least 8 hours (up to 48 hours). The longer it marinates",
 				" the less cooking time it takes."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Spaghetti Sauce To Can",
+			"name": "Spaghetti Sauce To Can",
 			"ingredients": [
 				"1/2 bushel tomatoes",
 				" 1 c. oil",
@@ -524,10 +662,16 @@
 				" Cook approximately 1 hour.",
 				" Put in jars and seal.",
 				" Yields 7 quarts."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Prize-Winning Meat Loaf",
+			"name": "Prize-Winning Meat Loaf",
 			"ingredients": [
 				"1 1/2 lb. ground beef",
 				" 1 c. tomato juice",
@@ -545,10 +689,16 @@
 				" Bake at 350\\u00b0 for 1 hour.",
 				" Let stand 5 minutes before slicing.",
 				" Makes 8 servings."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Smothered Round Steak(Servings: 4)  ",
+			"name": "Smothered Round Steak(Servings: 4)  ",
 			"ingredients": [
 				"2 lb. round steak",
 				" 1/2 tsp. ground black pepper",
@@ -571,10 +721,16 @@
 				" It's similar to what the rest of the world knows as braising.",
 				" The ingredients are briefly browned or sauteed",
 				" then cooked with a little liquid over a low heat for a long time.\\"
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Corral Barbecued Beef Steak Strips",
+			"name": "Corral Barbecued Beef Steak Strips",
 			"ingredients": [
 				"2 lb. round steak 1/2 to 3/4-inch thick",
 				" sliced in strips 1/8-inch thick (or thinner) and 3 1/2 to 4-inches long (easily sliced if partially frozen)",
@@ -598,10 +754,16 @@
 				" Cover and cook slowly",
 				" stirring occasionally 30 minutes or until meat is tender. Serve over rice or buttered noodles.",
 				" Yields 6 to 8 servings."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Easy Fudge",
+			"name": "Easy Fudge",
 			"ingredients": [
 				"1 (14 oz.) can sweetened condensed milk",
 				" 1 (12 oz.) pkg. semi-sweet chocolate chips",
@@ -618,10 +780,16 @@
 				" until chocolate is melted and mixture is smooth. Remove from heat.",
 				" Stir in nuts and vanilla.",
 				" Spread in pan."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Taco-Filled Green Pepper",
+			"name": "Taco-Filled Green Pepper",
 			"ingredients": [
 				"1 lb. Ground Beef",
 				" 1 pkg. taco seasoning",
@@ -646,10 +814,16 @@
 				" and bake at 350 degrees for 15 to 20 minutes or until peppers are crispy and filling is heated through. Top with tomatoes",
 				" cheese",
 				" and sour cream."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "One Hour Rolls",
+			"name": "One Hour Rolls",
 			"ingredients": [
 				"1 c. milk",
 				" 2 Tbsp. sugar",
@@ -672,10 +846,16 @@
 				" Place rolls on a cookie sheet",
 				" put in a warm place and let rise for 1 hour.",
 				" Bake at 350\\u00b0 for about 20 minutes. Yield: 2 1/2 dozen."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Punch Bowl Fruit Salad",
+			"name": "Punch Bowl Fruit Salad",
 			"ingredients": [
 				"2 large cans sliced peaches",
 				" 2 large cans fruit cocktail",
@@ -698,10 +878,16 @@
 				" Wash and cut grapes in half.",
 				" Mix all together.",
 				" Nuts or other fruit may be added."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Summer Chicken",
+			"name": "Summer Chicken",
 			"ingredients": [
 				"1 pkg. chicken cutlets",
 				" 1/2 c. oil",
@@ -711,10 +897,16 @@
 			],
 			"directions": [
 				"Double recipe for more chicken."
-			]
+			],
+			"prep_time": 1,
+			"cooking_time": 2,
+			"difficulty": 0,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cherry Pizza",
+			"name": "Cherry Pizza",
 			"ingredients": [
 				"2 cans cherry pie mix",
 				" 1 box deluxe white cake mix",
@@ -728,10 +920,16 @@
 				" Top with ground nuts.",
 				" Melt butter and pour over top.",
 				" Bake 45 minutes in a 350\\u00b0 oven."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Potato And Cheese Pie",
+			"name": "Potato And Cheese Pie",
 			"ingredients": [
 				"3 eggs",
 				" 1 tsp. salt",
@@ -753,10 +951,16 @@
 				" or until knife inserted in center comes out clean and potatoes are tender. Cool on rack 5 minutes",
 				" cut into squares.",
 				" Makes 4 large servings."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Tuna Macaroni Casserole",
+			"name": "Tuna Macaroni Casserole",
 			"ingredients": [
 				"1 box macaroni and cheese",
 				" 1 can tuna",
@@ -771,10 +975,16 @@
 				" pimento and onion.",
 				" Mix.",
 				" Serve hot or cold."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Artichoke Dip",
+			"name": "Artichoke Dip",
 			"ingredients": [
 				"2 cans or jars artichoke hearts",
 				" 1 c. mayonnaise",
@@ -788,10 +998,16 @@
 				" uncovered",
 				" for 20 to 30 minutes at 350\\u00b0.",
 				" Serve with crackers."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Broccoli Dip For Crackers",
+			"name": "Broccoli Dip For Crackers",
 			"ingredients": [
 				"16 oz. sour cream",
 				" 1 pkg. dry vegetable soup mix",
@@ -808,10 +1024,16 @@
 				" Bake at 350\\u00b0 for 30 minutes",
 				" uncovered.",
 				" Serve hot with vegetable crackers."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Summer Spaghetti",
+			"name": "Summer Spaghetti",
 			"ingredients": [
 				"1 lb. very thin spaghetti",
 				" 1/2 bottle McCormick Salad Supreme (seasoning)",
@@ -828,10 +1050,16 @@
 				" green peppers",
 				" mushrooms",
 				" olives or whatever your taste may want."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Pear-Lime Salad",
+			"name": "Pear-Lime Salad",
 			"ingredients": [
 				"1 (16 oz.) can pear halves",
 				" undrained",
@@ -855,10 +1083,16 @@
 				" Stir in pears.",
 				" Pour into an oiled 4-cup mold or Pyrex dish.",
 				" Chill."
-			]
+			],
+			"prep_time": 14,
+			"cooking_time": 28,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Watermelon Rind Pickles",
+			"name": "Watermelon Rind Pickles",
 			"ingredients": [
 				"7 lb. watermelon rind",
 				" 7 c. sugar",
@@ -885,10 +1119,16 @@
 				" sterilized jars.",
 				" Makes 8 pints.",
 				" (Oil of cinnamon and clove keeps rind clear and transparent.)"
-			]
+			],
+			"prep_time": 18,
+			"cooking_time": 36,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Stew",
+			"name": "Chicken Stew",
 			"ingredients": [
 				"3 lb. chicken",
 				" boiled",
@@ -914,10 +1154,16 @@
 				" Add sugar",
 				" salt and black pepper.",
 				" Cook until all vegetables are tender over medium heat."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Quick Coffee Cake(6 Servings)  ",
+			"name": "Quick Coffee Cake(6 Servings)  ",
 			"ingredients": [
 				"3 Tbsp. softened butter or margarine",
 				" 1/2 c. granulated sugar",
@@ -942,10 +1188,16 @@
 				" Mix brown sugar and cinnamon and sprinkle over batter.",
 				" Dot with 2 tablespoons fat.",
 				" Bake at 350\\u00b0 (moderate oven) for 25 to 30 minutes."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Angel Biscuits",
+			"name": "Angel Biscuits",
 			"ingredients": [
 				"5 c. flour",
 				" 3 Tbsp. sugar",
@@ -965,10 +1217,16 @@
 				" dissolve yeast in warm water.",
 				" Stir into buttermilk and add to dry mixture.",
 				" Cover and chill."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Quick Peppermint Puffs",
+			"name": "Quick Peppermint Puffs",
 			"ingredients": [
 				"8 marshmallows",
 				" 2 Tbsp. margarine",
@@ -983,10 +1241,16 @@
 				" Dip in margarine and place in a greased muffin tin.",
 				" Bake at 375\\u00b0 for 10 to 15 minutes",
 				" remove from pan."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Fruit Pizza",
+			"name": "Fruit Pizza",
 			"ingredients": [
 				"1 box yellow cake mix",
 				" 1/4 c. water",
@@ -998,10 +1262,16 @@
 			"directions": [
 				"Mix ingredients and spread into 2 greased pizza pans.",
 				" Bake at 350\\u00b0 for 15-20 minutes."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chocolate Mint Bars",
+			"name": "Chocolate Mint Bars",
 			"ingredients": [
 				"1 c. flour",
 				" 1 c. sugar",
@@ -1016,10 +1286,16 @@
 				" do not overbake.",
 				" Cool completely",
 				" then spread with mint layer."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Beer Bread",
+			"name": "Beer Bread",
 			"ingredients": [
 				"3 c. self rising flour",
 				" 1 - 12 oz. can beer",
@@ -1029,10 +1305,16 @@
 				"Stir the ingredients together and put in a greased and floured loaf pan.",
 				" Bake at 425 degrees for 50 minutes.",
 				" Drizzle melted butter on top."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Divan",
+			"name": "Chicken Divan",
 			"ingredients": [
 				"1/4 c. margarine",
 				" 1/4 c. chopped onion (or as much as you want)",
@@ -1058,10 +1340,16 @@
 				" Arrange broccoli and cubed chicken in a large baking dish. Spoon sauce over chicken.",
 				" Top with grated cheese.",
 				" Bake in a 350\\u00b0 oven for about 20 minutes or in microwave until cheese is melted."
-			]
+			],
+			"prep_time": 12,
+			"cooking_time": 24,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Mexican Cookie Rings",
+			"name": "Mexican Cookie Rings",
 			"ingredients": [
 				"1 1/2 c. sifted flour",
 				" 1/2 tsp. baking powder",
@@ -1087,10 +1375,16 @@
 				" Bake in 375\\u00b0 oven for 10 to 12 minutes or until golden brown.",
 				" Cool on racks.",
 				" Serves 2 dozen."
-			]
+			],
+			"prep_time": 14,
+			"cooking_time": 28,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Vegetable-Burger Soup",
+			"name": "Vegetable-Burger Soup",
 			"ingredients": [
 				"1/2 lb. ground beef",
 				" 2 c. water",
@@ -1110,10 +1404,16 @@
 				" soup mix and sugar.",
 				" Bring to a boil.",
 				" Reduce heat and simmer for 20 minutes. Serve."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Ole",
+			"name": "Chicken Ole",
 			"ingredients": [
 				"4 chicken breasts",
 				" cooked",
@@ -1130,10 +1430,16 @@
 				" Mix all ingredients together.",
 				" Let sit overnight.",
 				" Bake 1 1/2 hours at 375\\u00b0."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Creamy Coleslaw(Better Homes And Gardens)  ",
+			"name": "Creamy Coleslaw(Better Homes And Gardens)  ",
 			"ingredients": [
 				"4 c. shredded cabbage",
 				" 1/2 c. shredded carrots",
@@ -1150,10 +1456,16 @@
 				" combine cabbage",
 				" carrot",
 				" green pepper and onion or can use package of slaw mix purchased from store."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Creole Flounder",
+			"name": "Creole Flounder",
 			"ingredients": [
 				"2 lb. flounder or pollack fillets",
 				" 1 1/2 c. chopped tomatoes",
@@ -1174,10 +1486,16 @@
 				" Stir together remaining ingredients except pepper rings. Spoon over fillets.",
 				" Bake 5 to 8 minutes or until fish flakes easily with fork.",
 				" Remove fillets to warm platter. Garnish with green pepper rings. Makes 4 to 6 servings."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Three Bean Salad",
+			"name": "Three Bean Salad",
 			"ingredients": [
 				"1 can green beans",
 				" wash and drain",
@@ -1195,10 +1513,16 @@
 				" salad oil",
 				" vinegar and water until sugar is dissolved.",
 				" Pour over beans and let stand overnight."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Dave'S Corn Casserole",
+			"name": "Dave'S Corn Casserole",
 			"ingredients": [
 				"1 (16 1/2 oz.) can whole kernel corn",
 				" drained",
@@ -1214,10 +1538,16 @@
 				" corn bread mix and melted margarine.",
 				" Pour into a greased 8 x 8 x 2-inch pan.",
 				" Bake at 350\\u00b0 for 50 minutes."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Casserole Italiano",
+			"name": "Casserole Italiano",
 			"ingredients": [
 				"1 lb. ground beef",
 				" 1/3 c. chopped onion",
@@ -1233,10 +1563,16 @@
 				" water and noodles.",
 				" Place cheese around edges.",
 				" Bake at 350\\u00b0 for 30 minutes."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Corned Beef And Cabbage Casserole",
+			"name": "Corned Beef And Cabbage Casserole",
 			"ingredients": [
 				"1 small cabbage",
 				" shredded",
@@ -1249,10 +1585,16 @@
 			"directions": [
 				"Combine all ingredients and cook uncovered over low heat until cabbage is crisp-tender",
 				" about 20 minutes."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Crab Cakes",
+			"name": "Crab Cakes",
 			"ingredients": [
 				"1 Tbsp. Worcestershire sauce",
 				" 2 or 3 shakes Old Bay",
@@ -1263,10 +1605,16 @@
 			"directions": [
 				"Mix together and carefully add 1 pound lump crab meat.",
 				" Mix ahead of time and refrigerate so they will hold together better."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Taco Dip",
+			"name": "Taco Dip",
 			"ingredients": [
 				"2 (8 oz.) pkg. cream cheese",
 				" softened",
@@ -1288,10 +1636,16 @@
 				" Freeze for 15 minutes. Spread taco sauce evenly on top.",
 				" Layer remaining ingredients in the written order.",
 				" Serve with tortilla chips."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Bonbon Cookies",
+			"name": "Bonbon Cookies",
 			"ingredients": [
 				"1/2 lb. soft butter",
 				" 1/2 c. peanut butter",
@@ -1305,10 +1659,16 @@
 				" Add the remaining ingredients.",
 				" Mix and form into balls (best to mix with your hands) and chill several hours",
 				" even a day."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Forever Amber",
+			"name": "Forever Amber",
 			"ingredients": [
 				"1 lb. orange sliced candy",
 				" chopped",
@@ -1327,10 +1687,16 @@
 				" Let dry.",
 				" If it seems set on bottom",
 				" turn over and let it continue to dry."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Gooey Coffee Cake",
+			"name": "Gooey Coffee Cake",
 			"ingredients": [
 				"1 yellow cake mix",
 				" 2 eggs",
@@ -1351,10 +1717,16 @@
 				" Add on top of first mixture.",
 				" Bake 15 minutes at 325\\u00b0",
 				" then bake 20 minutes at 350\\u00b0."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Phylis' Pineapple-Banana Salad",
+			"name": "Phylis' Pineapple-Banana Salad",
 			"ingredients": [
 				"1 large can chunk pineapple",
 				" 4 to 5 bananas"
@@ -1362,10 +1734,16 @@
 			"directions": [
 				"Drain pineapple and reserve juice.",
 				" Cut bananas in chunks like pineapple."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Casserole",
+			"name": "Chicken Casserole",
 			"ingredients": [
 				"1 can cream of mushroom soup",
 				" 1 can cream of chicken soup",
@@ -1380,10 +1758,16 @@
 				" Bake the last 45 minutes",
 				" uncovered",
 				" to brown top of chicken."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Pineapple Nut Pie",
+			"name": "Pineapple Nut Pie",
 			"ingredients": [
 				"1 (8 oz.) pkg. cream cheese",
 				" 1 can sweetened condensed milk",
@@ -1399,10 +1783,16 @@
 				" Beat well.",
 				" Pour into graham cracker crust and chill.",
 				" Slice in small servings (very rich) and top with dollop of Cool Whip."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Annie'S Diabetic Candy",
+			"name": "Annie'S Diabetic Candy",
 			"ingredients": [
 				"1 (8 oz.) Jell-O sugar-free vanilla or French vanilla pudding (put in dry)",
 				" 1 (8 oz.) Philadelphia light cream cheese",
@@ -1413,10 +1803,16 @@
 				"Mix all ingredients",
 				" form in small balls and roll in chopped peanuts.",
 				" Keep refrigerated."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Frozen Peach Mousse",
+			"name": "Frozen Peach Mousse",
 			"ingredients": [
 				"4 medium peaches",
 				" peeled and chopped",
@@ -1429,10 +1825,16 @@
 				"Puree peaches in a blender.",
 				" Add remaining ingredients.",
 				" Blend and pour in container and freeze."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Strawberry Pie",
+			"name": "Strawberry Pie",
 			"ingredients": [
 				"16 oz. Cool Whip",
 				" 2 pkg. frozen strawberries *",
@@ -1442,10 +1844,16 @@
 			],
 			"directions": [
 				"*Can also use blueberries or cherries."
-			]
+			],
+			"prep_time": 1,
+			"cooking_time": 2,
+			"difficulty": 0,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Blueberry Surprise",
+			"name": "Blueberry Surprise",
 			"ingredients": [
 				"1 stick margarine",
 				" 1 1/2 c. graham cracker crumbs",
@@ -1455,10 +1863,16 @@
 				"Mix ingredients and press 2/3 mixture in bottom of square baking dish.",
 				" (A bowl that has the same diameter top and bottom may be used",
 				" 1 1/2 to 2-quart size.)"
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Moist Devil'S Food Cake",
+			"name": "Moist Devil'S Food Cake",
 			"ingredients": [
 				"2 c. sifted flour",
 				" 1 1/2 tsp. baking soda",
@@ -1489,10 +1903,16 @@
 				" set aside.",
 				" Beat egg whites until stiff peaks form when beater is lifted.",
 				" Fold into batter. Bake in two 9-inch greased cake pans at 375\\u00b0 for 30 minutes."
-			]
+			],
+			"prep_time": 16,
+			"cooking_time": 32,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Dot'S Civil War Cake",
+			"name": "Dot'S Civil War Cake",
 			"ingredients": [
 				"3 medium apples",
 				" chopped",
@@ -1519,10 +1939,16 @@
 				" Pour into greased and floured tube pan.",
 				" Bake 1 hour at 350\\u00b0.",
 				" Serves 16."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Potato Casserole",
+			"name": "Potato Casserole",
 			"ingredients": [
 				"6 c. diced potatoes",
 				" 1/2 c. chopped onion",
@@ -1546,20 +1972,32 @@
 				" mix with remaining butter.",
 				" Sprinkle cornflakes and butter on top of potato mixture.",
 				" Bake at 350\\u00b0 for 50 minutes."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Dream Pie",
+			"name": "Dream Pie",
 			"ingredients": [
 				"vanilla wafers",
 				" butter"
 			],
 			"directions": [
 				"Mix vanilla wafer crumbs with butter."
-			]
+			],
+			"prep_time": 1,
+			"cooking_time": 2,
+			"difficulty": 2,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Divinity Fudge",
+			"name": "Divinity Fudge",
 			"ingredients": [
 				"2 2/3 c. sugar",
 				" 2/3 c. white corn syrup (Karo)",
@@ -1577,10 +2015,16 @@
 				" Cool",
 				" add vanilla and nuts.",
 				" Beat until cool and thick enough to set. Pour into a buttered platter or drop by teaspoons on waxed paper."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Apple Crisp",
+			"name": "Apple Crisp",
 			"ingredients": [
 				"apples",
 				" 1/2 c. sugar",
@@ -1599,10 +2043,16 @@
 				" salt",
 				" cornflake crumbs and oleo.",
 				" Spread mixture on apples."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Sausage Balls",
+			"name": "Sausage Balls",
 			"ingredients": [
 				"2 c. Bisquick",
 				" 1 lb. sausage",
@@ -1614,10 +2064,16 @@
 				" Add Bisquick and mix thoroughly.",
 				" Roll into medium size balls.",
 				" Bake at 350\\u00b0 for 15 minutes or until golden brown."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Consomme Chicken",
+			"name": "Consomme Chicken",
 			"ingredients": [
 				"chicken parts",
 				" 1 can cream of chicken soup",
@@ -1630,10 +2086,16 @@
 				"Add enough liquid to chicken soup and consomme to make 4 cups of water.",
 				" Season with salt and pepper.",
 				" Cook at 350\\u00b0 for 1 hour."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Spanish Hamburgers",
+			"name": "Spanish Hamburgers",
 			"ingredients": [
 				"1/2 c. celery",
 				" 2 chopped onions",
@@ -1657,10 +2119,16 @@
 				" mustard",
 				" salt",
 				" pepper catsup and water. Simmer for 30 minutes."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Egg Drop Soup",
+			"name": "Egg Drop Soup",
 			"ingredients": [
 				"2 (13 3/4 oz.) cans chicken broth",
 				" 1 Tbsp. cornstarch",
@@ -1675,10 +2143,16 @@
 				" stir once gently.",
 				" Remove from heat. Garnish with sliced green onion.",
 				" Makes 4 servings."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Mulled Cider",
+			"name": "Mulled Cider",
 			"ingredients": [
 				"1/2 gal. apple juice",
 				" 1 tsp. allspice",
@@ -1694,10 +2168,16 @@
 				" dash of nutmeg.",
 				" This recipe can be doubled many times",
 				" according to the number of guests present."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Sesame Ginger Chicken",
+			"name": "Sesame Ginger Chicken",
 			"ingredients": [
 				"1 Tbsp. sesame seed",
 				" toasted",
@@ -1722,10 +2202,16 @@
 				" if desired.",
 				" Yields 4 servings",
 				" about 200 calories."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Egg Casserole",
+			"name": "Egg Casserole",
 			"ingredients": [
 				"1 Vidalia onion",
 				" chopped",
@@ -1756,10 +2242,16 @@
 				" eggs.",
 				" Place\\tin refrigerator overnight (at least 8 hours).\\tAdd Cheddar cheese before cooking.",
 				" Bake at 350\\u00b0 for 1 hour."
-			]
+			],
+			"prep_time": 17,
+			"cooking_time": 34,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cranberry-Apple-Orange Salad",
+			"name": "Cranberry-Apple-Orange Salad",
 			"ingredients": [
 				"1 (12 oz.) bag raw cranberries (2 c.)",
 				" 1 c. sugar",
@@ -1787,10 +2279,16 @@
 				" or leave in a bowl and stir before serving.",
 				" Chill until set.",
 				" Can even be made a day ahead. Keeps well in refrigerator for a few days."
-			]
+			],
+			"prep_time": 14,
+			"cooking_time": 28,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Brown Rice",
+			"name": "Brown Rice",
 			"ingredients": [
 				"1 c. raw rice",
 				" 1 can beef consomme",
@@ -1802,10 +2300,16 @@
 			"directions": [
 				"Put in a covered 1 1/2-quart dish.",
 				" Bake 1 hour at 350\\u00b0."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cranberry Salad",
+			"name": "Cranberry Salad",
 			"ingredients": [
 				"2 (3 oz.) pkg. softened cream cheese",
 				" 2 Tbsp. margarine",
@@ -1824,10 +2328,16 @@
 				" Freeze 6 hours.",
 				" Remove from mold shortly before serving.",
 				" Makes 12 servings."
-			]
+			],
+			"prep_time": 7,
+			"cooking_time": 14,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cheese Dip",
+			"name": "Cheese Dip",
 			"ingredients": [
 				"2 lb. Velveeta cheese",
 				" 1 (15 oz.) can Italian tomatoes",
@@ -1841,10 +2351,16 @@
 				"Dice tomatoes and peppers.",
 				" Combine all ingredients in top of double boiler for 30 minutes.",
 				" Serve hot over corn chips."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Funnel Cake",
+			"name": "Funnel Cake",
 			"ingredients": [
 				"1 1/3 c. flour",
 				" 1 1/4 tsp. salt",
@@ -1871,10 +2387,16 @@
 				" Remove from pan",
 				" drain on a paper towel.",
 				" Sprinkle with powdered sugar and serve hot."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Fast Real Good Fudge",
+			"name": "Fast Real Good Fudge",
 			"ingredients": [
 				"4 lb. confectioners sugar",
 				" 1 c. cocoa",
@@ -1893,10 +2415,16 @@
 				" Pour hot mixture over sugar mixture.",
 				" Mix quickly and pour into buttered cookie sheet.",
 				" Cool and cut into squares."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Squash Casserole",
+			"name": "Squash Casserole",
 			"ingredients": [
 				"3 lb. squash",
 				" 3 onions",
@@ -1917,10 +2445,16 @@
 				" Drain all water from squash.",
 				" Stir in sour cream and soup.",
 				" Place in a greased baking dish a layer of squash and a layer of stuffing. Bake at 350\\u00b0 for 35 minutes."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Cheese Ball",
+			"name": "Cheese Ball",
 			"ingredients": [
 				"2 pkg. cream cheese",
 				" 2 c. shredded Cheddar cheese (8 oz.)",
@@ -1938,10 +2472,16 @@
 				" Mix and add liquids last.",
 				" Mix well.",
 				" Roll into ball and cover with chopped nuts."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "*Apricot Salad",
+			"name": "*Apricot Salad",
 			"ingredients": [
 				"1 large pkg. apricot jello (6 oz.)",
 				" 2/3 c. sugar",
@@ -1966,10 +2506,16 @@
 				" This is a large salad",
 				" could fill a 2-quart mold or 2 (1-quart) molds.",
 				" Serves about 12."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Pound Cake",
+			"name": "Pound Cake",
 			"ingredients": [
 				"3 c. plain flour (cake flour may be substituted for plain flour)",
 				" 3 c. sugar",
@@ -1985,10 +2531,16 @@
 			"directions": [
 				"Have all ingredients at room temperature. Hand stir all dry ingredients together. Add eggs and stir. Add butter and Crisco and stir. Add milk and stir. Put batter in",
 				" mixer and beat at high speed until well blended. Add 1 to 2 teaspoons of your favorite flavoring and mix well. Pour batter into greased and floured tube pan. Place in cold oven. Bake at 325\\u00b0 for 1 hour and 20 to 30 minutes."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Monkey Bread",
+			"name": "Monkey Bread",
 			"ingredients": [
 				"2 loaves frozen bread",
 				" softened",
@@ -2010,10 +2562,16 @@
 				" Rise 2 1/2 to 3 hours.",
 				" Bake 30 minutes at 350\\u00b0",
 				" turn out immediately to cool."
-			]
+			],
+			"prep_time": 11,
+			"cooking_time": 22,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Chicken Roll-Ups",
+			"name": "Chicken Roll-Ups",
 			"ingredients": [
 				"1 (8 oz.) can crescent rolls",
 				" 1 1/2 c. grated medium or sharp cheese",
@@ -2026,10 +2584,16 @@
 				"Unroll crescent rolls",
 				" add cooked chicken and grated cheese. Wrap roll over chicken and cheese",
 				" pinch sides together."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Beef And Spanish Rice Casserole",
+			"name": "Beef And Spanish Rice Casserole",
 			"ingredients": [
 				"1 can Spanish rice",
 				" 1 can corned beef",
@@ -2041,10 +2605,16 @@
 				" Layer rice and meat",
 				" diced onion and grated cheese.",
 				" Bake at 350\\u00b0 for 25 to 30 minutes."
-			]
+			],
+			"prep_time": 4,
+			"cooking_time": 8,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Baked Beans",
+			"name": "Baked Beans",
 			"ingredients": [
 				"3 (1 lb.) cans pork and beans",
 				" 1/2 c. bell pepper",
@@ -2066,10 +2636,16 @@
 				" Bake in 350\\u00b0 oven for 45 minutes",
 				" or after mixing together",
 				" pour in crock-pot and cook 6 to 10 hours on low."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Sweet-N-Sour Chicken",
+			"name": "Sweet-N-Sour Chicken",
 			"ingredients": [
 				"2 c. diced cooked chicken",
 				" 2 Tbsp. shortening",
@@ -2097,10 +2673,16 @@
 				" pineapple and chicken.",
 				" Cover and simmer 5 minutes or until heated through.",
 				" Serve with rice or angel hair noodles. Serves 6 people."
-			]
+			],
+			"prep_time": 10,
+			"cooking_time": 20,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Ambrosia",
+			"name": "Ambrosia",
 			"ingredients": [
 				"8 to 10 juicy oranges",
 				" peeled and diced",
@@ -2115,10 +2697,16 @@
 			"directions": [
 				"Combine all ingredients. Chill overnight.",
 				" Yields 4 to 6 servings."
-			]
+			],
+			"prep_time": 2,
+			"cooking_time": 4,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Crazy Peanut Butter Cookies",
+			"name": "Crazy Peanut Butter Cookies",
 			"ingredients": [
 				"1 c. creamy peanut butter",
 				" 1 c. sugar",
@@ -2131,10 +2719,16 @@
 				" Makes 2 dozen.",
 				" Quick",
 				" easy and good."
-			]
+			],
+			"prep_time": 6,
+			"cooking_time": 12,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Brickle Bars",
+			"name": "Brickle Bars",
 			"ingredients": [
 				"1 box yellow cake mix",
 				" 2 eggs",
@@ -2153,10 +2747,16 @@
 				" Pour over cake mixture.",
 				" Bake 30 minutes at 350\\u00b0.",
 				" Let cool and cut into bars."
-			]
+			],
+			"prep_time": 9,
+			"cooking_time": 18,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Pancakes",
+			"name": "Pancakes",
 			"ingredients": [
 				"1 c. flour",
 				" 1 tsp. soda",
@@ -2173,10 +2773,16 @@
 				" margarine and buttermilk. Stir by hand until well blended.",
 				" Pour onto non-stick pan or griddle with a little oil added.",
 				" Cook until bubbly and turn over."
-			]
+			],
+			"prep_time": 5,
+			"cooking_time": 10,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Crustless Vegetable Ham Pie",
+			"name": "Crustless Vegetable Ham Pie",
 			"ingredients": [
 				"1/4 c. butter",
 				" 1/4 lb. mushrooms",
@@ -2205,10 +2811,16 @@
 				" approximately 2 minutes.",
 				" Add ham and cook 1 more minute",
 				" set aside."
-			]
+			],
+			"prep_time": 8,
+			"cooking_time": 16,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "Red Cabbage And Apples",
+			"name": "Red Cabbage And Apples",
 			"ingredients": [
 				"1 c. red cabbage",
 				" finely chopped",
@@ -2222,10 +2834,16 @@
 				"In a saucepan filled with lightly salted boiling water",
 				" cook red cabbage for 5 minutes",
 				" then drain."
-			]
+			],
+			"prep_time": 3,
+			"cooking_time": 6,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		},
 		{
-			"title": "German Potato Salad",
+			"name": "German Potato Salad",
 			"ingredients": [
 				"4 lb. potatoes",
 				" cooked",
@@ -2254,7 +2872,13 @@
 				" Turn skillet off.",
 				" Cover with a towel (not a lid) and let stand at room temperature 3 or 4 hours.",
 				" Sprinkle with bacon."
-			]
+			],
+			"prep_time": 13,
+			"cooking_time": 26,
+			"difficulty": 10,
+			"favourited": false,
+			"likes": 0,
+			"author": "Ozone"
 		}
 	]
 }
