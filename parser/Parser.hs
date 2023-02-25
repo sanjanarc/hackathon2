@@ -5,7 +5,7 @@ import Data.List
 import Data.Char
 
 names = cycle ["Niko", "Owen", "Sanjana", "Carlo", "Simiran"]
-requiredKeys = ["title", "ingredients", "directions"]
+requiredKeys = ["author", "title", "ingredients", "directions"]
 junkChars = ['"', ']', '[']
 
 data Recipe = Recipe { title :: String
@@ -27,15 +27,17 @@ main = do
 
 	let contentsClean = filter (\x -> x `notElem` junkChars) contents -- remove Junk Characters
 	    contents' = ((map (splitList ',') . lines) contentsClean) :: [[String]] -- split file into lines, then lines by commas
-	    values = drop 1 contents' -- values are all but first line
-	    keys = head contents' -- keys are first line
+	    values = (map (\(n, xs) -> n : xs) . zip names) (drop 1 contents')
+	    keys = "author":(head contents') -- keys are first line
 	    dict = (map (filter (\(k, _) -> k `elem` requiredKeys))) (map (zip keys) values) -- zip togther and remove useless keys
 	    recipes = map valueToRecipe dict -- turn tuples into recipes
 	    json = toJson recipes
 
+	--print $ dict
 
 	putStrLn $ json
 	-- print $ (length . filter (\(Recipe n _ _) -> "Pie" `isInfixOf` n)) recipes
+	--print $ zip (names) values
 
 	hClose handle
 
@@ -77,13 +79,14 @@ valueToRecipe value = Recipe { title=title'
 			     , difficulty=difficulty'
 			     , likes=0
 			     , favourited=False
-			     , author="Ozone"}
+			     , author=author'}
 	where title' = fromJust $ lookup "title" value
 	      ingredients' = (splitList ';' . fromJust . lookup "ingredients") value
 	      directions' = (splitList ';' . fromJust . lookup "directions") value
               preperationTime' = length directions'
               cookingTime' = 2 * preperationTime'
 	      difficulty' = (mod 10 . product) [(length ingredients'), (length (directions')), preperationTime', cookingTime']
+	      author' = fromJust $ lookup "author" value
 
 -- | Repeatedly splits a list and collects the results
 splitList :: Eq a => a -> [a] -> [[a]]
