@@ -85,110 +85,103 @@
     </div>
         
     <div class="recipe_form">
-        
+      <div  id="Order"  class="col-md-8 order-md-1">
+        <form class="needs-validation" novalidate onsubmit="console.log('test')">
+          <div class="mb-3">
+            <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
+            <input style="width:fit-content;" type="" class="form-control" id="" placeholder="">
+            <div class="invalid-feedback">
+              Please enter a valid pharmacy number.
+            </div>
+          </div>
 
-       
-      
-         
-            <div  id="Order"  class="col-md-8 order-md-1">
-              <form class="needs-validation" novalidate>
-                
-        
-                <div class="mb-3">
-                  <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
-                  <input style="width:fit-content;" type="" class="form-control" id="" placeholder="">
-                  <div class="invalid-feedback">
-                    Please enter a valid pharmacy number.
-                  </div>
-                </div>
+          <div class="mb-3">
+              <label for="">Please add all the ingredients in your recipe (seperated by commas).<span class="text-muted"></span></label>
+              <input style="height: 100px; " type="" class="form-control" id="" placeholder="">
+              <div class="invalid-feedback">
+                Please enter a valid pharmacy number.
+              </div>
+            </div>
 
-                <div class="mb-3">
-                    <label for="">Please add all the ingredients in your recipe (seperated by commas).<span class="text-muted"></span></label>
-                    <input style="height: 100px; " type="" class="form-control" id="" placeholder="">
-                    <div class="invalid-feedback">
-                      Please enter a valid pharmacy number.
-                    </div>
-                  </div>
+            <div class="mb-3">
+              <label for="">What is the total cost of the ingredients?<span class="text-muted"></span></label>
+              <input  style="width:fit-content;"  type="" class="form-control" id="" placeholder="">
+              <div class="invalid-feedback">
+                Please enter a valid pharmacy number.
+              </div>
+            </div>
 
-                  <div class="mb-3">
-                    <label for="">What is the total cost of the ingredients?<span class="text-muted"></span></label>
-                    <input  style="width:fit-content;"  type="" class="form-control" id="" placeholder="">
-                    <div class="invalid-feedback">
-                      Please enter a valid pharmacy number.
-                    </div>
-                  </div>
-  
 
-                <div class="mb-3">
-                    <label for="">Please add the steps of your recipe.<span class="text-muted"></span></label>
-                    <input style="height: 100px" type="" class="form-control" id="" placeholder="">
-                    <div class="invalid-feedback">
-                      Please enter a valid pharmacy number.
-                    </div>
-                  </div>
-                
-        
-        
-                <div class="row">
-            
-                    <div class="col-md-6 mb-3">
-                        <label for="firstName">Prep Time (in mins) </label>
-                        <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                          Valid Year is required.
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                        <label for="firstName">Cook Time (in mins)</label>
-                        <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                          Valid Year is required.
-                        </div>
-                      </div>
-                    <div class="col-md-6 mb-3">
-                      <label style="margin-bottom: 20px;" for="lastName">On a scale of 1-10, how difficult is this dish to make?</label>
-                      <form >
-                        
-                        <select style="margin-bottom: 20px; width:fit-content;" id="diff" name="diff">
-                          <option>Please Select one</option>
-                          <option value="easy">1-5 Easy</option>
-                          <option value="medium">6-8 Medium</option>
-                          <option value="hard">9-10 Hard</option>
-                          
-                        </select>
-                        
-                      </form>
-                      <div class="invalid-feedback">
-                        Valid Phone number is required.
-                      </div>
-                      
-                    </div>
-                  </div>
-    
-                  <div class="mb-3">
-                    <label for="">Add a youtube link to a tutorial. (optional)<span class="text-muted"></span></label>
-                    <input style="height: 50px" type="" class="form-control" id="" placeholder="">
-                    <div class="invalid-feedback">
-                      Please enter a valid pharmacy number.
-                    </div>
-                  </div>
-        
-                
-                
-                 
-              </form>
-    
-              <button style= "margin-top: 40px; " type="button"  class="lead"   >Save</button>
-    
+          <div class="mb-3">
+              <label for="">Please add the steps of your recipe.<span class="text-muted"></span></label>
+              <input style="height: 100px" type="" class="form-control" id="" placeholder="">
+              <div class="invalid-feedback">
+                Please enter a valid pharmacy number.
+              </div>
             </div>
           
-        
-                       
-    
+  
+  
+          <div class="row">
+              <div class="col-md-6 mb-3">
+                  <label for="firstName">Prep Time (in mins) </label>
+                  <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid Year is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">Cook Time (in mins)</label>
+                  <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid Year is required.
+                  </div>
+                </div>
+              <div class="col-md-6 mb-3">
+                <label style="margin-bottom: 20px;" for="lastName">On a scale of 1-10, how difficult is this dish to make?</label>
+                <form >
+                  
+                  <select style="margin-bottom: 20px; width:fit-content;" id="diff" name="diff">
+                    <option>Please Select one</option>
+                    <option value="easy">1-5 Easy</option>
+                    <option value="medium">6-8 Medium</option>
+                    <option value="hard">9-10 Hard</option>
+                    
+                  </select>
+                  
+                </form>
+                <div class="invalid-feedback">
+                  Valid Phone number is required.
+                </div>
+                
+              </div>
+            </div>
 
+            <div class="mb-3">
+              <label for="">Add a youtube link to a tutorial. (optional)<span class="text-muted"></span></label>
+              <input style="height: 50px" type="" class="form-control" id="" placeholder="">
+              <div class="invalid-feedback">
+                Please enter a valid pharmacy number.
+              </div>
+            </div>
+  
+          
+          
+            
+        </form>
 
+        <button style= "margin-top: 40px; " type="button"  class="lead"   >Save</button>
+
+      </div>
+          
     </div>
-
+    <script type="module">
+      import database from "../static/assets/js/res/database_parsing/queries.js"
+      
+      export function test() {
+        console.log("Test");
+      }
+    </script>
   </div>
 
 

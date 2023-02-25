@@ -3,10 +3,10 @@
 //import database from "../database.json"
 let database = ["Empty"];
 let reply = [];
+
 await fetch("../static/assets/js/res/database.json").then((response) => {
     reply = response;
 })
-
 await reply.json().then((data) => {
     database = data;
 });
@@ -15,7 +15,6 @@ await reply.json().then((data) => {
 
 // Gets all the recipes from the 
 function get_all_recipes() {
-    console.log(database);
     return database.recipes;
 }
 
@@ -148,6 +147,15 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
     return recipe;
 }
 
+// Likes a recipe
+function like_recipe(name) {
+    let recipes = filter_name(get_all_recipes(), name);
+
+    if (recipes.length != 1) return;
+
+    recipes[0].likes += 1;
+}
+
 // Saves a Recipe
 // function save_recipe(recipe) {
 //     database.recipes.push(recipe);
@@ -175,5 +183,6 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
 
 export default {
     get_all_recipes,
-    get_all_authors
+    get_all_authors,
+    like_recipe
 }
