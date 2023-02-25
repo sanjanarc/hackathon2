@@ -182,7 +182,7 @@
     <script type="module">
       import database from "../static/assets/js/res/database_parsing/queries.js"
       
-      export function test() {
+      export async function test() {
         const name = $('#submit_name').val()
         const ingredients = $('#submit_ingredients').val().split('\n')
         const cost = $('#submit_cost').val()
@@ -191,13 +191,9 @@
         const cook_time = $('#submit_cook_time').val()
         const difficulty = $('#submit_difficulty').val()
 
-        console.log(name)
-        console.log(ingredients)
-        console.log(cost)
-        console.log(steps)
-        console.log(prep_time)
-        console.log(cook_time)
-        console.log(difficulty);
+        //name, ingredients, prep_time, cook_time, difficulty, author
+        let new_recipe = database.create_recipe(name, ingredients, prep_time, cook_time, difficulty, "User");
+        await database.save_recipe(new_recipe);
       }
 
       $('#submission_button').click(function() {

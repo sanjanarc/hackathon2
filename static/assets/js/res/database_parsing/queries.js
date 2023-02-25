@@ -1,6 +1,6 @@
 
-//database = require("../database.json")
-//import database from "../database.json"
+
+
 let database = ["Empty"];
 let reply = [];
 
@@ -11,7 +11,6 @@ await reply.json().then((data) => {
     database = data;
 });
 
-//fs = require('fs');
 
 // Gets all the recipes from the 
 function get_all_recipes() {
@@ -170,15 +169,28 @@ function like_recipe(name) {
 }
 
 // Saves a Recipe
-// function save_recipe(recipe) {
-//     database.recipes.push(recipe);
-//     const new_data = JSON.stringify(database, null, 4);
-//     fs.writeFile("../database2.json", new_data, function(err) {
-//         if (err) {
-//             console.log(err);
-//         }
-//     });
-// }
+async function save_recipe(recipe) {
+    database.recipes.push(recipe);
+    // var data = new FormData();
+    // data.append("database3.json" , JSON.stringify(database, null, 4));
+    // var xhr = (window.XMLHttpRequest) ? new XMLHttpRequest() : new activeXObject("Microsoft.XMLHTTP");
+    // xhr.open('post', '/path/to/php', true );
+    // xhr.send(data);
+    
+    let content = JSON.stringify(database, null, 4);
+    const fileHandle = await window.showSaveFilePicker();
+    const fileStream = await fileHandle.createWritable();
+    await fileStream.write(new Blob([content], {type: "json"}));
+    await fileStream.close();
+ 
+    // database.recipes.push(recipe);
+    // const new_data = JSON.stringify(database, null, 4);
+    // fs.writeFile("../database2.json", new_data, function(err) {
+    //     if (err) {
+    //         console.log(err);
+    //     }
+    // });
+}
 
 
 export default {
@@ -186,4 +198,6 @@ export default {
     get_all_authors,
     like_recipe,
     filter_name,
+    create_recipe,
+    save_recipe
 }
