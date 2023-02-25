@@ -7,7 +7,7 @@ database =
     "recipes" : [
         {
             "name" : "Pancakes",
-            "ingrediants" : [
+            "ingredients" : [
                 "Flower",
                 "Egg",
                 "Milk",
@@ -34,23 +34,24 @@ function get_all_recipes() {
 
 // Filters out the recipes for the time range
 function filter_time_range(min, max) {
-    return get_all_recipes().filter(recipe => { return recipe.prep_time >= min && recipe.prep_time <= max; });
-    /*
-    filtered = {}
+    return get_all_recipes().filter(
+	    recipe => { 
+		    return recipe.prep_time >= min && recipe.prep_time <= max; 
+	    });
+}
 
-    for (recipe in recipes) {
-        if (recipe.prep_time >= min && recipe.prep_time <= max) {
-            filtered.append(recipe);
-        }
-    }
-
-    return filtered;
-    */
+function filter_by_ingredients_exact(recipies, ingredients) {
+	return get_all_recipes().filter(recipe => {
+		ingredients.every(ing => {
+			return recipe.ingredients.includes(ing);
+		});
+	});
 }
 
 
 function test_db() {
     console.log(filter_time_range(0, 20));
+    console.log(filter_by_ingredients_exact(null, ["Egg"]));
 }
 
 
