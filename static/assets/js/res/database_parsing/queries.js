@@ -1,13 +1,11 @@
 
 
-//import database from "../database.json"
-
 database = 
 {
     "recipes" : [
         {
             "name" : "Pancakes",
-            "ingrediants" : [
+            "ingredients" : [
                 "Flower",
                 "Egg",
                 "Milk",
@@ -20,12 +18,6 @@ database =
     ]
 };
 
-// async function get_database() {
-//     database = await fetch("../database.json")
-// }
-
-/// get_all_recipes
-
 // Gets all the recipes from the 
 function get_all_recipes() {
     return database.recipes;
@@ -33,24 +25,26 @@ function get_all_recipes() {
 
 
 // Filters out the recipes for the time range
-function filter_time_range(min, max) {
-    return get_all_recipes().filter(recipe => { return recipe.prep_time >= min && recipe.prep_time <= max; });
-    /*
-    filtered = {}
-
-    for (recipe in recipes) {
-        if (recipe.prep_time >= min && recipe.prep_time <= max) {
-            filtered.append(recipe);
-        }
-    }
-
-    return filtered;
-    */
+function filter_time_range(recipes, min, max) {
+    return recipes.filter(recipe => { return recipe.prep_time >= min && recipe.prep_time <= max; });
 }
 
+// Filters for the name
+function filter_name(recipes, name) {
+    name = name.toLowerCase();
+    return recipes.filter(recipe => {
+        const recipe_name = recipe.name.toLowerCase();
+
+        // Checks if the name is contained
+        let valid = recipe_name.includes(name);
+
+        return valid;
+    });
+}
 
 function test_db() {
-    console.log(filter_time_range(0, 20));
+    console.log(filter_time_range(get_all_recipes(), 5, 15));
+    console.log(filter_name(get_all_recipes(), "pan"));
 }
 
 
