@@ -1,6 +1,6 @@
 
 database = require("../database.json")
-
+fs = require('fs');
 
 // Gets all the recipes from the 
 function get_all_recipes() {
@@ -121,16 +121,42 @@ function recipe_filter(time_min, time_max, difficulty_min, difficulty_max, searc
     return recipes;
 }
 
+// Creates a recipe
+function create_recipe(name, ingredients, prep_time, cook_time, difficulty, author) {
+    const recipe = {
+        "name" : name,
+        "ingredients" : ingredients,
+        "prep_time" : prep_time,
+        "cooking_time" : cook_time,
+        "difficulty" : difficulty,
+        "favourited" : false,
+        "author" : author
+    }
+
+    return recipe;
+}
+
+// Saves a Recipe
+function save_recipe(recipe) {
+    database.recipes.push(recipe);
+    const new_data = JSON.stringify(database, null, 4);
+    fs.writeFile("../database2.json", new_data, function(err) {
+        if (err) {
+            console.log(err);
+        }
+    });
+}
 
 // Tests the database
 function test_db() {
-    console.log(recipe_filter(10, 30, 1, 5, "pan", ["Egg"]));
-    
-    console.log(get_approximate_recipe_cost(get_all_recipes()[0]));
-    console.log(filter_favourited_recipes(get_all_recipes()));
-
-    console.log(filter_followed_authors(get_all_recipes()));
-    console.log(filter_authors_with_name(get_all_recipes(), "Owen"));
+    save_recipe(create_recipe(
+        "Apple Strudle",
+        ["Egg", "Milk"],
+        10,
+        10,
+        4,
+        "Ozone"
+    ))
 }
 
 
