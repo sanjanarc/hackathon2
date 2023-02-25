@@ -104,13 +104,24 @@
   color: #FDFAF6;
 }
 
-#filters{
-  background-color: #E4EFE7;
-  height: 50px;
-  width: 100%;
-}
+  #filters{
+    background-color: #E4EFE7;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
-/**
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .filter{
+    width: 200px;
+  }
+
+
+
+  /**
 * Desktop Navigation 
 */
 .navbar {
