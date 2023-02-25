@@ -37,7 +37,7 @@
   }
 
   #footer {
-    width: 100vw;
+    width: 100%;
     background: #FDFAF6;
     box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.055);
     padding: 30px 0;
@@ -57,7 +57,7 @@
   }
 
 #footer {
-  width: 100vw;
+  width: 100%;
   background: #fefefe;
   box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.055);
   padding: 30px 0;
@@ -348,9 +348,6 @@ select::-webkit-scrollbar-thumb {
 }
 
 .food_row_maker {
-  width:50%;
-  margin:auto;
-  display:flex;
   justify-content: center;
   vertical-align: middle;
   text-align: center;
