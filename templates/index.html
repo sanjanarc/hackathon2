@@ -55,7 +55,7 @@
     </nav><!-- .navbar -->
 
     <div id="search_bar">
-      <input type = "text" placeholder="Find Recipes">
+      <input type = "text" id="search_value" placeholder="Find Recipes">
       <i class = "fa fa-search"></i>
     </div>
 
@@ -166,12 +166,7 @@
       </div>`
     }
 
-
-
-    export function load_recipe() {
-      // Gets all the recipes
-      const recipes = database.get_all_recipes();
-
+    function load_recipe(recipes) {
       let food_div = $("#recipe_super_div");
       let total_text = "";
 
@@ -202,18 +197,30 @@
               $('#' + like_button).addClass("liked")
             };
             database.like_recipe(recipes[i].name);
-            console.log("Here!");
-            console.log(the_index)
 
             let recipe_likes = "num_likes_" + the_index
             $('#' + recipe_likes).html(recipes[i].likes)
-
           }
         )
       }
     }
 
-    window.onload = load_recipe();
+    export function load_all_recipes() {
+      // Gets all the recipes
+      load_recipe(database.get_all_recipes());
+
+    }
+
+    $('#search_value').change(
+      function() {
+        const content = $('#search_value').val()
+        console.log("Content: " + content)
+        let all_recipes = database.get_all_recipes();
+        let recipes = database.filter_name(all_recipes, content)
+        load_recipe(recipes)
+      }
+    )
+    window.onload = load_all_recipes();
   </script>
 </body>
 
