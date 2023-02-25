@@ -359,6 +359,7 @@ select::-webkit-scrollbar-thumb {
   max-width: 200px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 30px;
 }
 
 

@@ -82,6 +82,19 @@ function filter_name(recipes, name) {
     });
 }
 
+// Filters the name for the exact value
+function filter_name_exact(recipes, name) {
+    name = name.toLowerCase();
+    return recipes.filter(recipe => {
+        const recipe_name = recipe.name.toLowerCase();
+
+        // Checks if the name is contained
+        let valid = recipe_name == name;
+
+        return valid;
+    });
+}
+
 // Filters the items based off followed authors
 function filter_followed_authors(recipes) {
     followed = get_followed_authors();
@@ -149,9 +162,9 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
 
 // Likes a recipe
 function like_recipe(name) {
-    let recipes = filter_name(get_all_recipes(), name);
+    let recipes = filter_name_exact(get_all_recipes(), name);
 
-    if (recipes.length != 1) return;
+    if (recipes.length < 1) return;
 
     recipes[0].likes += 1;
 }
@@ -167,19 +180,6 @@ function like_recipe(name) {
 //     });
 // }
 
-// Tests the database
-// function test_db() {
-//     save_recipe(create_recipe(
-//         "Apple Strudle",
-//         ["Egg", "Milk"],
-//         10,
-//         10,
-//         4,
-//         "Ozone"
-//     ))
-// }
-
-// test_db();
 
 export default {
     get_all_recipes,
