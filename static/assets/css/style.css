@@ -104,9 +104,9 @@
   color: #FDFAF6;
 }
 
-#filters{
-  background-color: #E4EFE7;
-  height: 100px;
+  #filters{
+    background-color: #E4EFE7;
+    height: 100px;
     margin-top: 20px;
     margin-bottom: 30px;
 
@@ -121,7 +121,7 @@
 
 
 
-/**
+  /**
 * Desktop Navigation 
 */
 .navbar {

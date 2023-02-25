@@ -184,5 +184,6 @@ function like_recipe(name) {
 export default {
     get_all_recipes,
     get_all_authors,
-    like_recipe
+    like_recipe,
+    filter_name,
 }
