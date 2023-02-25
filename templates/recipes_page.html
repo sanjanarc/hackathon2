@@ -44,7 +44,8 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li><a  href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+
         <li><a href="create_recipe.html" >Create Recipe</a></li>
         <li><a href="" onclick="">Favourites</a></li>
         <li><a href="" >About</a></li>
@@ -52,69 +53,77 @@
       </ul>
     </nav><!-- .navbar -->
 
+    <div id="search_bar">
+      <input type = "text" placeholder="Find Recipes">
+      <a href = "results_page.html">
+        <i class = "fa fa-search"></i>
+      </a>
+    </div>
+
   </div>
 
 </header><!-- End Header -->
 
 <!-- === Feed === -->
-<div id="viewRecipeTop">
+<div id="feed">
+<div style="height:100%" id="viewRecipeTop">
 
 
     <h1 style=" font-family: Trirong, serif; text-align: center;"  id="myHeader" >CURRENT RECIPE</h1>  
     
-    <div id="recipe_info" >  <p1 id="prepHeading">PREP TIME</p1> <p2 id="prepTime">7 mins &nbsp;</p2>
-        <p3 id="cookHeading">COOK TIME</p3> <p4 id="cookTime">20 mins &nbsp; </p4>
-        <p5 id="serveHeading">SERVES</p5> <p6 id="serveNumber">4 &nbsp;</p6>
-        <p7 id="difficultyHeading">DIFFICULTY</p7> 
-        <p8 id="difficultyLevel">5 &nbsp;</p8>
-        <p9 id="ingredientHeading">INGREDIENTS</p9>
+    
 
     <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list-->
     
-    <div class="recipeImage">
-        <img src="recipeImage.jpeg" alt="Image of recipe" width="400" height="500">
-    </div>
 
-    
-
-    <div class="row">
-        <div class="col-lg-4">
-          <img src="" class="img-fluid" id="tm1" alt="">
-        </div>
+    <div style="margin-left: 25%; " class="row">
+      <div class="col-lg-4">
+        <img  src="..//static/assets/img/food2.jpg"  class="img-fluid" id="tm1" alt="">
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <p1 id="prepHeading">PREP TIME</p1> <p2 id="prepTime">&nbsp;</p2>
+        <div class="row"> 
+          <p3 id="cookHeading">COOK TIME</p3> <p4 id="cookTime"> &nbsp; </p4>
+          <p7 id="difficultyHeading">DIFFICULTY</p7> <p8 id="difficultyLevel"> </p8>
+          <p9 id="ingredientHeading">INGREDIENTS</p9>
+          <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list--></div>
         
-        <div class="col-lg-8 pt-4 pt-lg-0 content">
-          <h3>Sanjana Roy Chowdhury</h3>
-          <h4>Project Manager, Data Preprocessing &amp; Frontend Developer</h4>
-          <p class="fst-italic">
-            Sanjana would like to contribute in making human activity more convenient and safe, by improving past innovations and helping create new inventions. She also loves soccer, creating artwork and learning new languages.
-
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-rounded-right"></i> <strong>City:</strong>  Winnipeg, CA</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Bsc in Computer Engineering (UofM)</li>
-              </ul>
-            </div>
           </div>
+          
         </div>
       </div>
-      <br>
+    <br>
 
+
+        
+<div style="margin-left: 25%;" id="prepRecipeSteps">
+
+    <p11 id="preparationHead">PROCEDURE</p11>
+    <ul id="preperationSteps"></ul> <!-- Use this id to ouput the preparation steps-->
+    <p9 id="ingredientHeading">LINK TO YOUTUBE VIDEO</p9> 
+    <a id="yt_link" ></a>  <!-- Use this id to ouput the ingredients list-->
+   
+
+</div>
+<br>
+
+<div style="margin-left: 25%;" id="comment_section">
+
+  <p12 id="preparationHead">COMMENTS</p12>
+  
+ 
+
+</div>
+<br>
+<div style="margin-left:25%;  float:right; margin-right:25%;" id ="author_link">
+  <a href="authors_page.html">Posted by </a>  <!-- add authors name through -->
+</div>
+<br>
 </div>
 
 
 
-<div id="prepRecipeSteps">
-
-    <h2 id="preparationHead">Preparation</h2>
-    <ul id="preperationSteps"><</ul> <!-- Use this id to ouput the preparation steps-->
-
-</div>
 
 
 <footer  id="footer">
