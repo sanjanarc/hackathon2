@@ -1,0 +1,113 @@
+
+
+
+#myheader{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    cursor:default;
+}
+
+#prepHeading{
+
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    cursor:default;
+
+
+
+}
+#prepTime{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor:default;
+
+
+}
+
+#cookHeading{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    cursor:default;
+
+
+
+}
+#cookTime{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor:default;
+
+
+
+
+}
+
+#serveHeading{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    cursor:default;
+
+
+
+}
+#serveNumber{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor:default;
+
+
+}
+
+#difficultyHeading{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+
+
+}
+#difficultyLevel{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    cursor:default;
+
+
+}
+.recipeImage{
+    left:1.9%;
+	position: absolute;
+    cursor:default;
+
+
+}
+
+#ingredientHeading{
+    top: 80%;
+    right: 40%;
+    cursor:default;
+    position: absolute;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+
+
+}
+
+
+#ingredientsList{
+    right: 30%;
+    cursor:default;
+    position: absolute;
+
+}
+#preparationHead{
+    padding-top: 50px;
+    top: 5%;
+    left: 3%;
+    position: absolute;
+
+
+}
