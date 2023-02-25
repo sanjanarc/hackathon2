@@ -1,9 +1,21 @@
 
-database = require("../database.json")
-fs = require('fs');
+//database = require("../database.json")
+//import database from "../database.json"
+let database = ["Empty"];
+let reply = [];
+await fetch("../static/assets/js/res/database.json").then((response) => {
+    reply = response;
+})
+
+await reply.json().then((data) => {
+    database = data;
+});
+
+//fs = require('fs');
 
 // Gets all the recipes from the 
 function get_all_recipes() {
+    console.log(database);
     return database.recipes;
 }
 
@@ -137,28 +149,31 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
 }
 
 // Saves a Recipe
-function save_recipe(recipe) {
-    database.recipes.push(recipe);
-    const new_data = JSON.stringify(database, null, 4);
-    fs.writeFile("../database2.json", new_data, function(err) {
-        if (err) {
-            console.log(err);
-        }
-    });
-}
+// function save_recipe(recipe) {
+//     database.recipes.push(recipe);
+//     const new_data = JSON.stringify(database, null, 4);
+//     fs.writeFile("../database2.json", new_data, function(err) {
+//         if (err) {
+//             console.log(err);
+//         }
+//     });
+// }
 
 // Tests the database
-function test_db() {
-    save_recipe(create_recipe(
-        "Apple Strudle",
-        ["Egg", "Milk"],
-        10,
-        10,
-        4,
-        "Ozone"
-    ))
+// function test_db() {
+//     save_recipe(create_recipe(
+//         "Apple Strudle",
+//         ["Egg", "Milk"],
+//         10,
+//         10,
+//         4,
+//         "Ozone"
+//     ))
+// }
+
+// test_db();
+
+export default {
+    get_all_recipes,
+    get_all_authors
 }
-
-
-
-test_db();
