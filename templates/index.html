@@ -51,13 +51,16 @@
         <li><a href="" >About</a></li>
 
       </ul>
+
     </nav><!-- .navbar -->
 
-    <div class="header-social-links">
-      <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-      
+    <div id="search_bar">
+      <input type = "text" placeholder="Find Recipes">
+      <i class = "fa fa-search"></i>
+    </div>
+
+
+    <div>
     </div>
 
   </div>
@@ -86,7 +89,7 @@
 
             <a id = "like_button" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
               <span id = heart4>
-                <i class="fa  fa-heart-o fa-3x" aria-hidden="true" >
+                <i class="fa fa-heart-o fa-3x" aria-hidden="true" >
 
                 </i> 
               </span>
@@ -167,26 +170,30 @@
 
 </div>
 
-<div class = "container-sm text-center" id = "filters">
-  <div class = "row align-items-center">
-    <div class = "col" id = "filter1">
+<div class = "container-fluid text-center" id = "filters">
+  <div class = "row align-items-center" id="categories">
+    <a class = "col filter" id = "filter1" href="">
       Filter by Cost
-    </div>
-    <div class = "col" id = "filter2">
+    </a>
+    <a class = "col filter" id = "filter2" href="">
       Filter by Prep Time
-    </div>
-    <div class = "col" id = "filter3">
+    </a>
+    <a class = "col filter" id = "filter3" href="">
       Filter by Ingredients
-      </div>
-      <div class = "col" id = "filter4">
-        Filter by xxxx
-      </div>
-      <div class = "col" id = "filter5">
-        Filter by xxxx
-      </div>
+    </a>
+    <a class = "col filter" id = "filter4" href="">
+      Filter by xxxx
+    </a>
+    <a class = "col filter" id = "filter5" href="">
+      Filter by xxxx
+    </a>
+  </div>
 </div>
 
-
+<div class = "container-md text-center">
+  <h2>
+    Other Recipes
+  </h2>
 </div>
     
 
