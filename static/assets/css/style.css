@@ -82,11 +82,7 @@
   position: relative;
   object-fit: cover;
   height: 500px;
-  width: 200px;
-}
-
-#recipe_image{
-  position: relative;
+  width: 180px;
 }
 
 #likes {
@@ -141,11 +137,13 @@
   transition: 0.3s;
   position: relative;
 }
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
+
 .navbar > ul > li > a:before {
   content: "";
   position: absolute;
@@ -349,6 +347,22 @@ select::-webkit-scrollbar-thumb {
 
 }
 
+.food_row_maker {
+  width:50%;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+}
+
+.food_div {
+  background-color: white;
+  max-width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
 select:hover {

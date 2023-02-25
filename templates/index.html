@@ -45,6 +45,7 @@
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
         <li class="navbar_button"><a class="active" href="index.html">Home</a></li>
+
         <li class="navbar_button"><a href="create_recipe.html" >Create Recipe</a></li>
         <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
         <li class="navbar_button"><a href="" >About</a></li>
@@ -132,7 +133,7 @@
 
     // Generates a food 
     function generate_food_div(index) {
-      return `<div class = 'food_div' id = 'recipe1' >
+      return `<div class = 'col food_div' id = 'recipe1' >
         <div id = 'recipe_image'>
           <img class = 'img-fluid' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
           </img>
