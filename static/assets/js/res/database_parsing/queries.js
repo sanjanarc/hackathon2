@@ -24,8 +24,7 @@ database =
                 "Egg",
                 "Milk",
                 "Butter",
-                "Baking powder",
-                "Sugar"
+                "Baking powder"
             ],
             "prep_time" : 15,
             "cooking_time" : 10,
@@ -34,6 +33,10 @@ database =
     ]
 };
 
+function get_aproximate_price(ingredient) {
+    return Math.random() * 100;
+}
+ 
 // Gets all the recipes from the 
 function get_all_recipes() {
     return database.recipes;
@@ -44,8 +47,16 @@ function get_recipe_cost(recipe) {
     return 10;
 }
 
+// Gets the total time to cookie a recipe
 function get_recipe_total_time(recipe) {
     return recipe.prep_time + recipe.cooking_time;
+}
+
+// Gets the approximate cost of a recipe
+function get_approximate_recipe_cost(recipe) {
+    return recipe.ingredients
+        .map(ing => { 
+            return get_aproximate_price(ing);}).reduce(add, 0)
 }
 
 // Filters out the recipes for the time range
@@ -74,20 +85,40 @@ function filter_name(recipes, name) {
     });
 }
 
-// Filters out recipes that don't contain these ingrediants
-function filter_ingredients_exact(recipes, ingredients) {
+// Filters recipes that have ALL of these ingredients
+function filter_ingredients_all(recipes, ingredients) {
     return recipes.filter(recipe => {
-        return recipe.ingredients.every(ing => {
-            return ingredients.includes(ing);
+        return ingredients.every(ing => {
+            return recipe.ingredients.includes(ing);
         });
     });
 }
 
+// Filters recipes that have AT LEAST 1 of these ingredients
+function filter_ingredients_any(recipes, ingredients) {
+    return recipes.filter(recipe => {
+        return ingredients.some(ing => {
+            return recipe.ingredients.includes(ing);
+        });
+    });
+}
+
+// Filters for a recipe that fits within the bounds
+function recipe_filter(time_min, time_max, difficulty_min, difficulty_max, search_name, ingredients) {
+    let recipes = get_all_recipes();
+    recipes = filter_name(recipes, search_name);
+    recipes = filter_time_range(recipes, time_min, time_max);
+    recipes = filter_difficulty_range(recipes, difficulty_min, difficulty_max);
+    recipes = filter_ingredients_all(recipes, ingredients);
+    
+    return recipes;
+}
+
 // Tests the database
 function test_db() {
-    console.log(filter_time_range(get_all_recipes(), 5, 15));
-    console.log(filter_name(get_all_recipes(), "to"));
-    console.log(filter_ingredients_exact(get_all_recipes(), ["Egg"]));
+    console.log(recipe_filter(10, 30, 1, 5, "pan", ["Egg"]));
+    
+    console.log(get_approximate_recipe_cost(get_all_recipes()[0]));
 }
 
 
