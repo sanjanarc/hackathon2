@@ -3,10 +3,10 @@
 //import database from "../database.json"
 let database = ["Empty"];
 let reply = [];
+
 await fetch("../static/assets/js/res/database.json").then((response) => {
     reply = response;
 })
-
 await reply.json().then((data) => {
     database = data;
 });
@@ -15,7 +15,6 @@ await reply.json().then((data) => {
 
 // Gets all the recipes from the 
 function get_all_recipes() {
-    console.log(database);
     return database.recipes;
 }
 
@@ -78,6 +77,19 @@ function filter_name(recipes, name) {
 
         // Checks if the name is contained
         let valid = recipe_name.includes(name);
+
+        return valid;
+    });
+}
+
+// Filters the name for the exact value
+function filter_name_exact(recipes, name) {
+    name = name.toLowerCase();
+    return recipes.filter(recipe => {
+        const recipe_name = recipe.name.toLowerCase();
+
+        // Checks if the name is contained
+        let valid = recipe_name == name;
 
         return valid;
     });
@@ -148,6 +160,15 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
     return recipe;
 }
 
+// Likes a recipe
+function like_recipe(name) {
+    let recipes = filter_name_exact(get_all_recipes(), name);
+
+    if (recipes.length < 1) return;
+
+    recipes[0].likes += 1;
+}
+
 // Saves a Recipe
 // function save_recipe(recipe) {
 //     database.recipes.push(recipe);
@@ -159,21 +180,9 @@ function create_recipe(name, ingredients, prep_time, cook_time, difficulty, auth
 //     });
 // }
 
-// Tests the database
-// function test_db() {
-//     save_recipe(create_recipe(
-//         "Apple Strudle",
-//         ["Egg", "Milk"],
-//         10,
-//         10,
-//         4,
-//         "Ozone"
-//     ))
-// }
-
-// test_db();
 
 export default {
     get_all_recipes,
-    get_all_authors
+    get_all_authors,
+    like_recipe
 }
