@@ -39,7 +39,7 @@
   <div class="container-fluid d-flex justify-content-between align-items-center">
 
     <!--<h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>*/-->
-    <a href="index.html" class="logo"><img src="../static/assets/img/Free_Sample_By_Wix.jpeg" alt="" class="img-fluid"></a>
+    <a href="index.html" class="logo"><img src="../static/assets/img/Free_Sample_By_Wix (1).jpeg" alt="" class="img-fluid"></a>
     
 
     <nav id="navbar" class="navbar order-last order-lg-0">
@@ -73,68 +73,113 @@
 
 
   <!-- ======= Feed Section ======= -->
-  <div style="margin-bottom:20px; margin-left:20%" class="create_recipe">
-    <h1> Add your recipes to share with the community.</h1>
-    <div  class="add_image"> 
+  <div  id="feed" class="create_recipe">
+    <h1> ADD YOUR RECIPE</h1>
+    <div  style="margin-bottom: 30px;" class="add_image"> 
         <p> Please add an image of your dish</p>
         <form action="/action_page.php">
             <label for="img"></label>
-            <input type="file" id="img" name="img" accept="image/*">
-            <input type="submit">
+            <input style="margin-left:5%" type="file" id="img" name="img" accept="image/*">
+           
           </form>
+
+          
     </div>
         
-    <div class="recipe_form">
-      <div  id="Order"  class="col-md-8 order-md-1">
-        <form class="needs-validation" novalidate onsubmit="console.log('test')">
-          <div class="mb-3">
-            <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
-            <input style="width:fit-content;" type="" class="form-control" id="" placeholder="">
-            <div class="invalid-feedback">
-              Please enter a valid pharmacy number.
-            </div>
-          </div>
+    <div style="margin-left: 25%" class="recipe_form">
+        
 
-          <div class="mb-3">
-              <label for="">Please add all the ingredients in your recipe (seperated by commas).<span class="text-muted"></span></label>
-              <input style="height: 100px; " type="" class="form-control" id="" placeholder="">
-              <div class="invalid-feedback">
-                Please enter a valid pharmacy number.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label for="">What is the total cost of the ingredients?<span class="text-muted"></span></label>
-              <input  style="width:fit-content;"  type="" class="form-control" id="" placeholder="">
-              <div class="invalid-feedback">
-                Please enter a valid pharmacy number.
-              </div>
-            </div>
-
-
-          <div class="mb-3">
-              <label for="">Please add the steps of your recipe.<span class="text-muted"></span></label>
-              <input style="height: 100px" type="" class="form-control" id="" placeholder="">
-              <div class="invalid-feedback">
-                Please enter a valid pharmacy number.
-              </div>
-            </div>
-          
-  
-  
-          <div class="row">
-              <div class="col-md-6 mb-3">
-                  <label for="firstName">Prep Time (in mins) </label>
-                  <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+       
+      
+         
+            <div  id="Order"  class="col-md-8 order-md-1">
+              <form class="needs-validation" novalidate>
+                
+        
+                <div class="mb-3">
+                  <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
+                  <input style=" margin-left: 12%; width:fit-content;" type="" class="form-control" id="" placeholder="">
                   <div class="invalid-feedback">
-                    Valid Year is required.
+                    Please enter a valid pharmacy number.
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                  <label for="firstName">Cook Time (in mins)</label>
-                  <input style="width:fit-content;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                  <div class="invalid-feedback">
-                    Valid Year is required.
+
+                <div class="mb-3">
+                    <label style="font-size:18px;" for="">Please add all the ingredients in your recipe.<span class="text-muted"></span></label>
+                    <textarea rows = "5" cols = "40" name = "interest_bio" id = "interest_bio" required></textarea> 
+                    <!-- <input style="height: 100px; " type="" class="form-control" id="" placeholder=""> -->
+                    <div class="invalid-feedback">
+                      Please enter a valid pharmacy number.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label style="font-size:18px;" for="">What is the total cost of the ingredients?<span class="text-muted"></span></label>
+                   
+
+                    <input  style= " margin-left: 24%; width:50%;"  type="" class="form-control" id="" placeholder=""> 
+                    <div class="invalid-feedback">
+                      Please enter a valid pharmacy number.
+                    </div>
+                  </div>
+  
+
+                <div class="mb-3">
+                    <label for="">Please add the steps of your recipe.<span class="text-muted"></span></label>
+                    <textarea rows = "10" cols = "40" name = "interest_bio" id = "interest_bio" required></textarea> 
+
+                    <!-- <input style="height: 100px; width:400px;"  type="" class="form-control" id="" placeholder=""> -->
+                    <div class="invalid-feedback">
+                      Please enter a valid pharmacy number.
+                    </div>
+                  </div>
+                
+        
+        
+                <div class="row">
+            
+                    <div class="col-md-6 mb-3">
+                        <label style="font-size:16px;" for="firstName">Prep Time (in mins) </label>
+                        <input style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid Year is required.
+                        </div>
+                      </div>
+                      <div  class="col-md-6 mb-3">
+                        <label style="font-size:16px;" for="firstName">Cook Time (in mins)</label>
+                        <input style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                          Valid Year is required.
+                        </div>
+                      </div>
+                    
+                  </div>
+    
+                  <div class="mb-3">
+                    <label style="margin-bottom: 20px; font-size: 18px;" for="lastName">On a scale of 1-10, how difficult is this dish to make?</label>
+                    <form >
+                      
+                      <select style="margin-bottom: 20px;  width:fit-content; width:280px; height:50px; border-color: transparent; border-radius: 10px; padding-right: 10%;"  id="diff" name="diff">
+                        <option >Please Select one</option>
+                        <option value="easy">1-5 Easy</option>
+                        <option value="medium">6-8 Medium</option>
+                        <option value="hard">9-10 Hard</option>
+                        
+                      </select>
+                      
+                    </form>
+                    <div class="invalid-feedback">
+                      Valid Phone number is required.
+                    </div>
+                    
+                  </div> 
+                  <div class="mb-3">
+                    <label style="margin-left:30%;" for="">Add a youtube link to a tutorial. (optional)<span class="text-muted"></span></label>
+                    <input style="height: 40px" type="" class="form-control" id="" placeholder="">
+                    <div class="invalid-feedback">
+                      Please enter a valid pharmacy number.
+                    </div>
+
                   </div>
                 </div>
               <div class="col-md-6 mb-3">
@@ -154,7 +199,7 @@
                   Valid Phone number is required.
                 </div>
                 
-              </div>
+              </form>
             </div>
 
             <div class="mb-3">
@@ -166,6 +211,8 @@
             </div>
   
           
+        
+            <button style="margin-right:20%; float:right; padding-bottom:10px;" type="button" >Save</button> 
           
             
         </form>
@@ -187,18 +234,17 @@
 
 
 
-  
   <!-- ======= Footer ======= -->
   <footer  id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright Recipe Reboot <strong><span></span></strong>. All Rights Reserved 
+        &copy; Copyright  <strong><span></span></strong>. All Rights Reserved Recipe Reboot
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
