@@ -74,7 +74,7 @@
 <div id ="main">
 
   <!-- top three recipes -->
-  <div class = "container-sm text-center">
+  <div class = "container-sm text-center" style = "margin-top: 0px">
     <h1>
       POPULAR RECIPES
     </h1>
@@ -91,82 +91,65 @@
               <span id = heart4>
                 <i class="fa fa-heart-o fa-3x" aria-hidden="true" >
 
-                </i> 
-              </span>
-            </a>
-
-            <div class = "col" id = "like_counter">
-              97
-            </div>
-
-          </div>
-
-        </div> 
-        <h class = "recipe_name">
-          recipe1
-        </h>
-      </div>
-      <div class = "col" id = "recipe2" >
-        <div id = "recipe_image">
-          <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food2.jpg">
-            
           </img>
-
-          <div class = "row align-items-center" id = "likes">
-
-            <a id = "like_button" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
-              <span id = heart4>
-                <i class="fa  fa-heart-o fa-3x" aria-hidden="true" >
-
-                </i> 
-              </span>
-            </a>
-
-            <div class = "col" id = "like_counter">
-              97
+          recipe1
+          <div class = row>
+            <div class = "col text-start" id = "num_likes">
+              Likes: 15
             </div>
+            <button type = "button" class = "col-2" id = "likes">
+              Like
+            </button>
 
           </div>
+        
+        </div>
 
+        <div class = "recipe_name">
 
-        </div> 
-        <h class = "recipe_name">
-          recipe1
-        </h>
+        </div>
       </div>
-      <div class = "col" id = "recipe3">
-        <div id = "recipe_image">
-          <img class = "img-fluid" id = "recipe_image" src = "../static/assets/img/food3.jpg">
-            
+      <div class = "col" id = "recipe1" >
+        <div class = "recipe_image">
+          <img class = "img-fluid" src = "../static/assets/img/food2.jpg" style = "object-fit: cover; height: 500px; width: auto">
+
           </img>
-
-          <div class = "row align-items-center" id = "likes">
-
-            <a id = "like_button" href="http://127.0.0.1:5000/heart" data-gallery="portfolioGallery" class="col feed-lightbox">
-              <span id = heart4>
-                <i class="fa  fa-heart-o fa-3x" aria-hidden="true" >
-
-                </i> 
-              </span>
-            </a>
-
-            <div class = "col" id = "like_counter">
-              97
+          recipe1
+          <div class = row>
+            <div class = "col text-start" id = "num_likes">
+              Likes: 15
             </div>
+            <button type = "button" class = "col-2" id = "likes">
+              Like
+            </button>
 
           </div>
+        
+        </div>
 
+        <div class = "recipe_name">
 
-        </div> 
-        <h id = "recipe_name">
-          recipe1
-        </h>
+        </div>
+      </div>
+      <div class = "col" id = "recipe1">
+        <img class = "img-fluid" src = "../static/assets/img/food3.jpg" style = "object-fit: cover; height: 500px; width: auto">
+
+        </img>
+        recipe1
+        <div class = row>
+          <div class = "col text-start" id = "num_likes">
+            Likes: 15
+          </div>
+          <button type = "button" class = "col-2" id = "likes">
+            Like
+          </button>
+
+        </div>
+        
       </div>
     </div> 
   </div>
 
-
-    
 
 </div>
 
