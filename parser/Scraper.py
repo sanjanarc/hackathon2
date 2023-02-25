@@ -16,29 +16,53 @@ def get_parsed_page(url):
 
     return BeautifulSoup(response.html.html, 'html5lib')
 
+'''
 def get_image(image):
     images = get_parsed_page(bing + image)
 
-    image = images.find("img", {"class": "mimg"})
+    while True:
+        image = images.find("img", {"class": "mimg"})
 
-    image_link = image["src"]
+        image_link = image["src"]
 
-    if len(image_link) < 500:
-        print(image_link)
-        return image_link
-    else:
-        return missing_image
+        if len(image_link) < 500:
+            print(image_link)
+            return image_link
+        else:
+            return missing_image
+'''
+
+import re
+
+def get_image(image_name):
+    #image_name = image_name.replace(" ", "").replace("\n", "").replace("-", "").replace("'", "")
+    image_name = ''.join([i for i in image_name if i.isalpha()])
+    image_name = image_name.lower()
+    print(f"Name: \'{image_name}\'")
+
+    page = get_parsed_page(bing + image_name)
+
+    images = page.find_all("img", {"class": "mimg"})
+
+    for image in images:
+        image_link = image["src"]
+
+        if len(image_link) < 500:
+            print(image_link)
+            return image_link
+    return missing_image
 
 with open("recipes.json", "r") as infile:
     data = json.load(infile)
 
     for recipe in data['recipes']:
-        print(recipe["name"])
+        #print(recipe["name"])
         #image_link = get_image(recipe["name"])
         image_link = missing_img
         try:
             image_link = get_image(recipe["name"])
-        except:
+        except Exception as e:
+            print("Error: " + str(e))
             pass
         recipe["image_link"] = image_link
 
