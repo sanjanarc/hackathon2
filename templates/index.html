@@ -44,11 +44,11 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li><a class="active" href="index.html">Home</a></li>
+        <li class="navbar_button"><a class="active" href="index.html">Home</a></li>
 
-        <li><a href="create_recipe.html" >Create Recipe</a></li>
-        <li><a href="" onclick="">Favourites</a></li>
-        <li><a href="" >About</a></li>
+        <li class="navbar_button"><a href="create_recipe.html" >Create Recipe</a></li>
+        <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
+        <li class="navbar_button"><a href="" >About</a></li>
 
       </ul>
 
@@ -203,16 +203,16 @@
   <script type="module">
     import database from "../static/assets/js/res/database_parsing/queries.js"
 
-
+    // Generates a food 
     function generate_food_div(index) {
-      return `<div class = 'col' id = 'recipe1' >
+      return `<div class = 'col food_div' id = 'recipe1' >
         <div id = 'recipe_image'>
-          <img class = 'img-fluid' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
+          <img class = 'img-fluid food_image' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
           </img>
           <div class = 'row align-items-center' id = 'likes'>
-            <a class='like_button' id = 'like_button_` + index + `' href='http://127.0.0.1:5000/heart' data-gallery='portfolioGallery' class='col feed-lightbox'>
-              <span id = heart4>
-                <i class='fa  fa-heart-o fa-3x' aria-hidden='true' >
+            <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
+              <span id = 'heart4'>
+                <i class='fa  fa-heart-o fa-3x' id='heart_` + index + `'' aria-hidden='true' >
                 </i> 
               </span>
             </a>
@@ -235,7 +235,7 @@
       let total_text = "";
 
       //Adds the row organizer
-      total_text += "<div class = 'row align-items-start' id = 'selectors'>"
+      total_text += "<div class = 'row align-items-start food_row_maker' id = 'selectors'>"
       for (let i = 0; i < recipes.length; i++) {
         total_text += generate_food_div((i + 1));
       }
@@ -249,12 +249,24 @@
         $('#' + recipe_title).html(recipes[i].name)
 
         const recipe_likes = "num_likes_" + index
-        $('#' + recipe_likes).html(recipes[i].likes + " Likes")
+        $('#' + recipe_likes).html(recipes[i].likes)
 
-        const like_button = "like_button_" + index;
+        const like_button = "heart_" + index;
         $('#' + like_button).click(
           function() {
+            let the_index = index; 
+            if ($('#' + like_button).hasClass("liked")) {
+              $('#' + like_button).removeClass("liked")
+            } else {
+              $('#' + like_button).addClass("liked")
+            };
             database.like_recipe(recipes[i].name);
+            console.log("Here!");
+            console.log(the_index)
+
+            let recipe_likes = "num_likes_" + the_index
+            $('#' + recipe_likes).html(recipes[i].likes)
+
           }
         )
       }
