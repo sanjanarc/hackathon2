@@ -137,6 +137,7 @@ import database from "../js/res/database_parsing/queries.js"
         let all_recipes = database.get_all_recipes();
         let recipes = database.filter_name(all_recipes, content)
         load_recipe(recipes, recipes.length)
+        document.getElementById("title_div").innerHTML = "Results for '" + content +"'";
       }
     )
     window.onload = load_some_recipes(5);
