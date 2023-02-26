@@ -192,14 +192,7 @@ async function save_recipe(recipe) {
     const fileStream = await fileHandle.createWritable();
     await fileStream.write(new Blob([content], {type: "json"}));
     await fileStream.close();
- 
-    // database.recipes.push(recipe);
-    // const new_data = JSON.stringify(database, null, 4);
-    // fs.writeFile("../database2.json", new_data, function(err) {
-    //     if (err) {
-    //         console.log(err);
-    //     }
-    // });
+
 }
 
 
