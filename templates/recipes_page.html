@@ -80,8 +80,6 @@
     
     
 
-    <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list-->
-    
 
     <div style="margin-left: 25%; " class="row">
       <div class="col-lg-4">
@@ -142,7 +140,43 @@
 <br>
 </div>
 
+<script type="module">
+  import database from "../static/assets/js/res/database_parsing/queries.js"
 
+  function load_single_recipe() {
+    const href = window.location.href;
+    const all_recipes = database.get_all_recipes();
+    let recipe_name = href.substring(href.lastIndexOf("?") + 1)
+    recipe_name = recipe_name.replaceAll(".", " ");
+    const recipe = database.filter_name_exact(all_recipes, recipe_name)[0];
+
+
+    console.log(recipe)
+
+    $('#prepHeading').text("PREP TIME " + recipe.prep_time);
+    $('#cookHeading').text("COOK TIME " + recipe.cooking_time);
+    $('#difficultyHeading').text("DIFFICULTY " + recipe.difficulty);
+    $('#myHeader').text(recipe.name);
+
+    let all_text = "";
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.ingredients[i];
+      all_text += "</li>"
+    }
+    $('#ingredientsList').append(all_text);
+
+    all_text = "";
+    for (let i = 0; i < recipe.directions.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.directions[i];
+      all_text += "</li>"
+    }
+    $('#preperationSteps').append(all_text);    
+  }
+
+  window.onload = load_single_recipe();
+</script>
 
 
 
