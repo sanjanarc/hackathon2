@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Recipe Reboot Home </title>
+    <title>Recipe Reboot Details</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,14 +44,14 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         
         <li><a href="create_recipe.html" >Create Recipe</a></li>
         </a></li>
 
       </ul>
-
     </nav><!-- .navbar -->
+
 
     <div id="search_bar">
       <input id="search_value" type = "text" placeholder="Find Recipes">
@@ -59,78 +59,131 @@
         <i class = "fa fa-search"></i>
       </a>
     </div>
-
+    
 
     <div class="header-favourites">
       <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
+       
       
-
     </div>
 
-
-    
   </div>
 
 </header><!-- End Header -->
 
+<!-- === Feed === -->
+<div style="margin-bottom:3%;" id="feed">
+<div style="height:100%" id="viewRecipeTop">
 
 
-  <!-- ======= Feed Section ======= -->
-  
-<div id ="main">
-
-  <!-- top three recipes -->
-  <div class = "container-sm text-center" style = "margin-top: 0px">
-    <h1 id = "title_div">
-      POPULAR RECIPES
-    </h1>
-
-    <div id="recipe_super_div">
-      
-    </div>
-  </div>
-
-</div>
-
-<div class = "container-fluid text-center" id = "filters">
-  <div class = "row align-items-center" id="categories">
-    <a class = "col filter" id = "filter1" href="">
-      Filter by Cost
-    </a>
-    <a class = "col filter" id = "filter2" href="">
-      Filter by Prep Time
-    </a>
-    <a class = "col filter" id = "filter3" href="">
-      Filter by Ingredients
-    </a>
-    <a class = "col filter" id = "filter4" href="">
-      Filter by xxxx
-    </a>
-    <a class = "col filter" id = "filter5" href="">
-      Filter by xxxx
-    </a>
-  </div>
-</div>
-
-<div class = "container-md text-center">
-  <h2>
-    Other Recipes
-  </h2>
-
-  <div id = "other_recipes">
-
-  </div>
-</div>
+    <h1 style=" font-family: Trirong, serif; text-align: center;"  id="myHeader" >CURRENT RECIPE</h1>  
+    
     
 
 
+    <div style="margin-left: 25%; " class="row">
+      <div class="col-lg-4">
+        <img  src="..//static/assets/img/food2.jpg"  class="img-fluid" id="tm1" alt="">
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <p1 id="prepHeading">PREP TIME</p1> <p2 id="prepTime">&nbsp;</p2>
+        <div class="row"> 
+          <p3 id="cookHeading">COOK TIME</p3> <p4 id="cookTime"> &nbsp; </p4>
+          <p7 id="difficultyHeading">DIFFICULTY</p7> <p8 id="difficultyLevel"> </p8>
+          <p9 id="ingredientHeading">INGREDIENTS</p9>
+          <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list--></div>
+        
+          </div>
+          
+        </div>
+      </div>
+    <br>
 
+
+        
+<div style="margin-left: 25%;" id="prepRecipeSteps">
+
+    <p11 id="preparationHead">PROCEDURE</p11>
+    <ul id="preperationSteps"></ul> <!-- Use this id to ouput the preparation steps-->
+    <p9 id="ingredientHeading">LINK TO YOUTUBE VIDEO</p9> 
+    <a id="yt_link" ></a>  <!-- Use this id to ouput the ingredients list-->
+   
+
+</div>
+<br>
+<div style="margin-left:25%;  float:right; margin-right:25%;" id ="author_link">
+  <a href="#"  onclick="" >Posted by </a>  <!-- add authors name through -->
+</div>
+<br>
+
+<div  id="comment_section">
+
+  <p12 style="font-family: Trirong, serif;
+  font-weight: 400;
+  font-style: italic;
+  color:#064420; margin-left:25%; "   id="commentL">Leave a Comment</p12>
+
+    <div class="comment-box">
+    
+      <form class="comment-form">
+        <input type="text" placeholder="Name">
+        <textarea rows="4" placeholder="Write Your Comment"></textarea>
+      </form>
+      <button  style="margin-right:20%; float:right; padding-bottom:10px;" type="submit">Post Your Comment</button>
+    
+    </div>
   
-  <!-- ======= Footer ======= -->
-  <footer  id="footer">
+ 
+
+</div>
+<br>
+</div>
+
+<script type="module">
+  import database from "../static/assets/js/res/database_parsing/queries.js"
+
+  function load_single_recipe() {
+    const href = window.location.href;
+    const all_recipes = database.get_all_recipes();
+    let recipe_name = href.substring(href.lastIndexOf("?") + 1)
+    recipe_name = recipe_name.replaceAll(".", " ");
+    const recipe = database.filter_name_exact(all_recipes, recipe_name)[0];
+
+
+    console.log(recipe)
+
+    $('#prepHeading').text("PREP TIME " + recipe.prep_time);
+    $('#cookHeading').text("COOK TIME " + recipe.cooking_time);
+    $('#difficultyHeading').text("DIFFICULTY " + recipe.difficulty);
+    $('#myHeader').text(recipe.name);
+
+    let all_text = "";
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.ingredients[i];
+      all_text += "</li>"
+    }
+    $('#ingredientsList').append(all_text);
+
+    all_text = "";
+    for (let i = 0; i < recipe.directions.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.directions[i];
+      all_text += "</li>"
+    }
+    $('#preperationSteps').append(all_text);    
+  }
+
+  window.onload = load_single_recipe();
+</script>
+
+
+
+<footer  id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright Recipe Reboot <strong><span></span></strong>. All Rights Reserved 
+        &copy; Copyright <strong><span></span></strong>. All Rights Reserved Recipe Reboot
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -154,9 +207,9 @@
   <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!--  Main JS File -->
-  <script type="module" src = "../static/assets/js/main.js">
-    
-  </script>
+  <script src="../static/assets/js/main.js"></script>
+
+
 </body>
 
 </html>

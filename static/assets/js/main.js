@@ -130,11 +130,14 @@ import database from "../js/res/database_parsing/queries.js"
 
     $('#search_value').change(
       function() {
+        if(window.location.href == 'http://127.0.0.1:5500/templates/create_recipe.html')
+            window.location.replace('http://127.0.0.1:5500/templates/index.html')
         const content = $('#search_value').val()
         console.log("Content: " + content)
         let all_recipes = database.get_all_recipes();
         let recipes = database.filter_name(all_recipes, content)
         load_recipe(recipes, recipes.length)
+        document.getElementById("title_div").innerHTML = "Results for '" + content +"'";
       }
     )
     window.onload = load_some_recipes(5);

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Recipe Reboot</title>
+    <title>Recipe Reboot Create Recipe </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -32,7 +32,7 @@
     <link href="../static/assets/css/style.css" rel="stylesheet">
   </head>
   
-  <body id="body">
+  <body id="body" >
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
@@ -44,25 +44,31 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li class="navbar_button"><a  href="index.html">Home</a></li>
-
-        <li class="navbar_button"><a class="active" href="create_recipe.html" >Create Recipe</a></li>
-        <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
-        <li class="navbar_button"><a href="" >About</a></li>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a class="active" href="create_recipe.html" >Create Recipe</a></li>
+        </a></li>
 
       </ul>
     </nav><!-- .navbar -->
 
+    <div id="search_bar">
+      <input  id="search_value" type = "text" placeholder="Find Recipes">
+      <a href = "#">
+        <i class = "fa fa-search"></i>
+      </a>
+    </div>
+
     <div class="header-social-links">
-      <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+      <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
+      
       
     </div>
 
   </div>
 
 </header><!-- End Header -->
+
 
 
 
@@ -138,6 +144,7 @@
                     Valid Year is required.
                   </div>
                 </div>
+
                 <div  class="col-md-6 mb-3">
                   <label  style="font-size:16px;" for="firstName">Cook Time (in mins)</label>
                   <input id="submit_cook_time" style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
@@ -152,7 +159,7 @@
               <label style="margin-bottom: 20px; font-size: 18px;" for="lastName">On a scale of 1-10, how difficult is this dish to make?</label>
               <form >
                 
-                <select id="submit_difficulty" style="margin-bottom: 20px;  width:fit-content; width:280px; height:50px; border-color: transparent; border-radius: 10px; padding-right: 10%;"  id="diff" name="diff">
+                <select id="submit_difficulty" style="margin-bottom: 20px;  width:fit-content; width:280px; height:40px; border-color: transparent; border-radius: 10px; padding-right: 10%;"  id="diff" name="diff">
                   <option >Please Select one</option>
                   <option value="easy">1-5 Easy</option>
                   <option value="medium">6-8 Medium</option>
@@ -176,13 +183,14 @@
             <button id="submission_button" style="margin-right:20%; float:right; padding-bottom:10px;" type="button">Save</button> 
           </div>                        
         </form>
+
       </div>
           
     </div>
     <script type="module">
       import database from "../static/assets/js/res/database_parsing/queries.js"
       
-      export function test() {
+      export async function test() {
         const name = $('#submit_name').val()
         const ingredients = $('#submit_ingredients').val().split('\n')
         const cost = $('#submit_cost').val()
@@ -191,13 +199,9 @@
         const cook_time = $('#submit_cook_time').val()
         const difficulty = $('#submit_difficulty').val()
 
-        console.log(name)
-        console.log(ingredients)
-        console.log(cost)
-        console.log(steps)
-        console.log(prep_time)
-        console.log(cook_time)
-        console.log(difficulty);
+        //name, ingredients, prep_time, cook_time, difficulty, author
+        let new_recipe = database.create_recipe(name, ingredients, prep_time, cook_time, difficulty, "User");
+        await database.save_recipe(new_recipe);
       }
 
       $('#submission_button').click(function() {
@@ -237,7 +241,7 @@
   <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!--  Main JS File -->
-  <script src="../static/assets/js/main.js"></script>
+  <script type = "module" src="../static/assets/js/main.js"></script>
 
 
 </body>
