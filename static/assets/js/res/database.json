@@ -1,39 +1,6 @@
 {
     "recipes" : [
         {
-            "name" : "Pancakes",
-            "ingredients" : [
-                "Flower",
-                "Egg",
-                "Milk",
-                "Butter",
-                "Baking powder",
-                "Sugar"
-            ],
-            "prep_time" : 10,
-            "cooking_time" : 5,
-            "difficulty" : 2,
-            "likes" : 15,
-            "favourited" : false,
-            "author" : "Niko"
-        },
-        {
-            "name" : "French Toast",
-            "ingredients" : [
-                "Flower",
-                "Egg",
-                "Milk",
-                "Butter",
-                "Baking powder"
-            ],
-            "prep_time" : 15,
-            "cooking_time" : 10,
-            "difficulty" : 2,
-            "likes" : 10,
-            "favourited" : true,
-            "author" : "Owen"
-        },
-        {
 			"name": "No-Bake Nut Cookies",
 			"ingredients": [
 				"1 c. firmly packed brown sugar",

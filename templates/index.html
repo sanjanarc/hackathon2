@@ -154,10 +154,12 @@
 
     // Generates a food 
     function generate_food_div(index) {
-      return `<div class = 'col food_div' id = 'recipe1' >
+      return `<div class = 'col food_div' id = 'recipe_` + index + `'>
         <div id = 'recipe_image'>
+          <a id = 'recipe_link_` + index + `'>
           <img class = 'img-fluid food_image' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
           </img>
+          <a>
           <div class = 'row align-items-center' id = 'likes'>
             <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
               <span id = 'heart4'>
@@ -189,12 +191,16 @@
       // Adds the recipes
       for (let i = 0; i < recipes.length; i++) {
         const index = i + 1;
+
+        // Sets the recipes name
         const recipe_title = "recipe_title_" + index
         $('#' + recipe_title).html(recipes[i].name)
 
+        // Sets the likes
         const recipe_likes = "num_likes_" + index
         $('#' + recipe_likes).html(recipes[i].likes)
 
+        // Enables clicking
         const like_button = "heart_" + index;
         $('#' + like_button).click(
           function() {
@@ -210,19 +216,24 @@
             $('#' + recipe_likes).html(recipes[i].likes)
           }
         )
+
+        //Sets the href
+        const recipe_link_ = '#recipe_link_' + index;
+        let new_link = recipes[i].name;
+        new_link = new_link.replaceAll(" ", ".")
+
+        $(recipe_link_).attr("href", "recipes_page.html?" + new_link)
       }
     }
 
     export function load_all_recipes() {
       // Gets all the recipes
       load_recipe(database.get_all_recipes());
-
     }
 
     $('#search_value').change(
       function() {
         const content = $('#search_value').val()
-        console.log("Content: " + content)
         let all_recipes = database.get_all_recipes();
         let recipes = database.filter_name(all_recipes, content)
         load_recipe(recipes)

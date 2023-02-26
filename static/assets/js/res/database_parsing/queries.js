@@ -83,6 +83,8 @@ function filter_name(recipes, name) {
 
 // Filters the name for the exact value
 function filter_name_exact(recipes, name) {
+    console.log("Filtering name exact!")
+
     name = name.toLowerCase();
     return recipes.filter(recipe => {
         const recipe_name = recipe.name.toLowerCase();
@@ -198,6 +200,7 @@ export default {
     get_all_authors,
     like_recipe,
     filter_name,
+    filter_name_exact,
     create_recipe,
     save_recipe
 }
