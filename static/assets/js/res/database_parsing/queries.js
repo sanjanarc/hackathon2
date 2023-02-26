@@ -83,7 +83,6 @@ function filter_name(recipes, name) {
 
 // Filters the name for the exact value
 function filter_name_exact(recipes, name) {
-    console.log("Filtering name exact!")
 
     name = name.toLowerCase();
     return recipes.filter(recipe => {
@@ -170,6 +169,15 @@ function like_recipe(name) {
     recipes[0].likes += 1;
 }
 
+// Likes a recipe
+function unlike_recipe(name) {
+    let recipes = filter_name_exact(get_all_recipes(), name);
+
+    if (recipes.length < 1) return;
+
+    recipes[0].likes -= 1;
+}
+
 // Saves a Recipe
 async function save_recipe(recipe) {
     database.recipes.push(recipe);
@@ -199,6 +207,7 @@ export default {
     get_all_recipes,
     get_all_authors,
     like_recipe,
+    unlike_recipe,
     filter_name,
     filter_name_exact,
     create_recipe,

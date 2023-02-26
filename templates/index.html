@@ -162,7 +162,7 @@
           <a>
           <div class = 'row align-items-center' id = 'likes'>
             <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
-              <span id = 'heart4'>
+              <span id = 'heart'` + index + `>
                 <i class='fa  fa-heart-o fa-3x' id='heart_` + index + `'' aria-hidden='true' >
                 </i> 
               </span>
@@ -201,19 +201,29 @@
         $('#' + recipe_likes).html(recipes[i].likes)
 
         // Enables clicking
-        const like_button = "heart_" + index;
-        $('#' + like_button).click(
+        const like_span = "#heart" + index;
+        const like_button = "#heart_" + index;
+        $(like_button).click(
           function() {
+            console.log("Clicked")
             let the_index = index; 
-            if ($('#' + like_button).hasClass("liked")) {
-              $('#' + like_button).removeClass("liked")
-            } else {
-              $('#' + like_button).addClass("liked")
-            };
-            database.like_recipe(recipes[i].name);
+            if ($(like_button).hasClass("fa-heart")) {
+              $(like_button).removeClass("fa-heart");
+              $(like_button).addClass("fa-heart-o");
 
-            let recipe_likes = "num_likes_" + the_index
-            $('#' + recipe_likes).html(recipes[i].likes)
+              database.unlike_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            } else {
+              $(like_button).addClass("fa-heart");
+              $(like_button).removeClass("fa-heart-o");
+
+              database.like_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            }
+
+
           }
         )
 
