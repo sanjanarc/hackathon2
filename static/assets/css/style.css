@@ -357,15 +357,15 @@ select::-webkit-scrollbar-thumb {
 
    
 
-   #search_bar i,input {
+   #search_value i,input {
     color:#064420;
     border:#064420;
    }
-   #search_bar {
+   #search_value {
     border-color:#064420;
    }
 
-   #search_bar input {
+   #search_value input {
     color:#064420;
     border:#064420;
     border:10px;
@@ -373,7 +373,7 @@ select::-webkit-scrollbar-thumb {
     background-color: #E4EFE7;
    } 
 
-   #search_bar input:hover {
+   #search_value input:hover {
     background-color:#E4EFE7;
     border-color: #E4EFE7;
     color: #064420;
