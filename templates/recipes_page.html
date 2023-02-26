@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Recipe Reboot</title>
+    <title>Recipe Reboot Details</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,11 +44,10 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li><a class="active" href="index.html">Home</a></li>
-
+        <li><a href="index.html">Home</a></li>
+        
         <li><a href="create_recipe.html" >Create Recipe</a></li>
-        <li><a href="" onclick="">Favourites</a></li>
-        <li><a href="" >About</a></li>
+        </a></li>
 
       </ul>
     </nav><!-- .navbar -->
@@ -58,6 +57,12 @@
       <a href = "results_page.html">
         <i class = "fa fa-search"></i>
       </a>
+    </div>
+
+    <div class="header-favourites">
+      <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
+      
+      
     </div>
 
   </div>
@@ -73,8 +78,6 @@
     
     
 
-    <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list-->
-    
 
     <div style="margin-left: 25%; " class="row">
       <div class="col-lg-4">
@@ -117,12 +120,48 @@
 </div>
 <br>
 <div style="margin-left:25%;  float:right; margin-right:25%;" id ="author_link">
-  <a href="authors_page.html">Posted by </a>  <!-- add authors name through -->
+  <a href="#"  onclick="" >Posted by </a>  <!-- add authors name through -->
 </div>
 <br>
 </div>
 
+<script type="module">
+  import database from "../static/assets/js/res/database_parsing/queries.js"
 
+  function load_single_recipe() {
+    const href = window.location.href;
+    const all_recipes = database.get_all_recipes();
+    let recipe_name = href.substring(href.lastIndexOf("?") + 1)
+    recipe_name = recipe_name.replaceAll(".", " ");
+    const recipe = database.filter_name_exact(all_recipes, recipe_name)[0];
+
+
+    console.log(recipe)
+
+    $('#prepHeading').text("PREP TIME " + recipe.prep_time);
+    $('#cookHeading').text("COOK TIME " + recipe.cooking_time);
+    $('#difficultyHeading').text("DIFFICULTY " + recipe.difficulty);
+    $('#myHeader').text(recipe.name);
+
+    let all_text = "";
+    for (let i = 0; i < recipe.ingredients.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.ingredients[i];
+      all_text += "</li>"
+    }
+    $('#ingredientsList').append(all_text);
+
+    all_text = "";
+    for (let i = 0; i < recipe.directions.length; i++) {
+      all_text += "<li>"
+      all_text += recipe.directions[i];
+      all_text += "</li>"
+    }
+    $('#preperationSteps').append(all_text);    
+  }
+
+  window.onload = load_single_recipe();
+</script>
 
 
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Recipe Reboot</title>
+    <title>Recipe Reboot Create Recipe </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -32,7 +32,7 @@
     <link href="../static/assets/css/style.css" rel="stylesheet">
   </head>
   
-  <body id="body">
+  <body style="background-image: url('background.jpg');" >
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
@@ -44,11 +44,10 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li class="navbar_button"><a  href="index.html">Home</a></li>
-
-        <li class="navbar_button"><a class="active" href="create_recipe.html" >Create Recipe</a></li>
-        <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
-        <li class="navbar_button"><a href="" >About</a></li>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a class="active" href="create_recipe.html" >Create Recipe</a></li>
+        </a></li>
 
       </ul>
     </nav><!-- .navbar -->
@@ -61,15 +60,15 @@
     </div>
 
     <div class="header-social-links">
-      <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+      <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
+      
       
     </div>
 
   </div>
 
 </header><!-- End Header -->
+
 
 
 
@@ -98,8 +97,6 @@
         <form class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
-            <input style=" margin-left: 12%; width:fit-content;" type="" class="form-control" id="" placeholder="">
-
             <input id="submit_name" style=" margin-left: 12%; width:fit-content;" type="" class="form-control" placeholder="">
             <div class="invalid-feedback">
               Please enter a valid pharmacy number.
@@ -193,7 +190,7 @@
     <script type="module">
       import database from "../static/assets/js/res/database_parsing/queries.js"
       
-      export function test() {
+      export async function test() {
         const name = $('#submit_name').val()
         const ingredients = $('#submit_ingredients').val().split('\n')
         const cost = $('#submit_cost').val()
@@ -202,13 +199,9 @@
         const cook_time = $('#submit_cook_time').val()
         const difficulty = $('#submit_difficulty').val()
 
-        console.log(name)
-        console.log(ingredients)
-        console.log(cost)
-        console.log(steps)
-        console.log(prep_time)
-        console.log(cook_time)
-        console.log(difficulty);
+        //name, ingredients, prep_time, cook_time, difficulty, author
+        let new_recipe = database.create_recipe(name, ingredients, prep_time, cook_time, difficulty, "User");
+        await database.save_recipe(new_recipe);
       }
 
       $('#submission_button').click(function() {

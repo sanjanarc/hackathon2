@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Recipe Reboot</title>
+    <title>Recipe Reboot Home </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -44,11 +44,10 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li class="navbar_button"><a class="active" href="index.html">Home</a></li>
-
-        <li class="navbar_button"><a href="create_recipe.html" >Create Recipe</a></li>
-        <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
-        <li class="navbar_button"><a href="" >About</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        
+        <li><a href="create_recipe.html" >Create Recipe</a></li>
+        </a></li>
 
       </ul>
 
@@ -56,10 +55,9 @@
 
 
 
-    <div class="header-social-links">
-      <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+    <div class="header-favourites">
+      <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
+      
       
 
       <input type = "text" id="search_value" placeholder="Find Recipes">
@@ -154,13 +152,15 @@
 
     // Generates a food 
     function generate_food_div(index) {
-      return `<div class = 'col food_div' id = 'recipe1' >
+      return `<div class = 'col food_div' id = 'recipe_` + index + `'>
         <div id = 'recipe_image'>
-          <img class = 'img-fluid flood-image' id = 'recipe_image_` + index + `' src = '../static/assets/img/food2.jpg'>
+          <a id = 'recipe_link_` + index + `'>
+          <img class = 'img-fluid food_image' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
           </img>
+          <a>
           <div class = 'row align-items-center' id = 'likes'>
             <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
-              <span id = 'heart4'>
+              <span id = 'heart'` + index + `>
                 <i class='fa  fa-heart-o fa-3x' id='heart_` + index + `'' aria-hidden='true' >
                 </i> 
               </span>
@@ -189,43 +189,65 @@
       // Adds the recipes
       for (let i = 0; i < recipes.length; i++) {
         const index = i + 1;
+
+        // Sets the recipes name
         const recipe_title = "recipe_title_" + index
         $('#' + recipe_title).html(recipes[i].name)
 
+        // Sets the likes
         const recipe_likes = "num_likes_" + index
         $('#' + recipe_likes).html(recipes[i].likes)
 
         const recipe_image = "recipe_image_" + index
         $('#' + recipe_image).attr("src", recipes[i].image_link)
 
-        const like_button = "heart_" + index;
-        $('#' + like_button).click(
-          function() {
-            let the_index = index; 
-            if ($('#' + like_button).hasClass("liked")) {
-              $('#' + like_button).removeClass("liked")
-            } else {
-              $('#' + like_button).addClass("liked")
-            };
-            database.like_recipe(recipes[i].name);
+        const recipe_image = "recipe_image_" + index
+        $('#' + recipe_image).attr("src", recipes[i].image_link)
 
-            let recipe_likes = "num_likes_" + the_index
-            $('#' + recipe_likes).html(recipes[i].likes)
+        // Enables clicking
+        const like_span = "#heart" + index;
+        const like_button = "#heart_" + index;
+        $(like_button).click(
+          function() {
+            console.log("Clicked")
+            let the_index = index; 
+            if ($(like_button).hasClass("fa-heart")) {
+              $(like_button).removeClass("fa-heart");
+              $(like_button).addClass("fa-heart-o");
+
+              database.unlike_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            } else {
+              $(like_button).addClass("fa-heart");
+              $(like_button).removeClass("fa-heart-o");
+
+              database.like_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            }
+
+
           }
         )
+
+        //Sets the href
+        const recipe_link_ = '#recipe_link_' + index;
+        let new_link = recipes[i].name;
+        new_link = new_link.replaceAll(" ", ".")
+
+        $(recipe_link_).attr("href", "recipes_page.html?" + new_link)
       }
     }
 
     export function load_all_recipes() {
       // Gets all the recipes
       load_recipe(database.get_all_recipes());
-
     }
 
     $('#search_value').change(
       function() {
         const content = $('#search_value').val()
-        console.log("Content: " + content)
         let all_recipes = database.get_all_recipes();
         let recipes = database.filter_name(all_recipes, content)
         load_recipe(recipes)
