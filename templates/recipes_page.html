@@ -44,94 +44,92 @@
 
     <nav id="navbar" class="navbar order-last order-lg-0">
       <ul class="menu" >
-        <li class="navbar_button"><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
 
-        <li class="navbar_button"><a href="create_recipe.html" >Create Recipe</a></li>
-        <li class="navbar_button"><a href="" onclick="">Favourites</a></li>
-        <li class="navbar_button"><a href="" >About</a></li>
+        <li><a href="create_recipe.html" >Create Recipe</a></li>
+        <li><a href="" onclick="">Favourites</a></li>
+        <li><a href="" >About</a></li>
 
       </ul>
-
     </nav><!-- .navbar -->
 
-
-
-    <div class="header-social-links">
-      <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
-      
-
-      <input type = "text" id="search_value" placeholder="Find Recipes">
-      <i class = "fa fa-search"></i>
-
+    <div id="search_bar">
+      <input type = "text" placeholder="Find Recipes">
+      <a href = "results_page.html">
+        <i class = "fa fa-search"></i>
+      </a>
     </div>
 
-
-    <div>
-    </div>
   </div>
 
 </header><!-- End Header -->
 
+<!-- === Feed === -->
+<div id="feed">
+<div style="height:100%" id="viewRecipeTop">
 
 
-  <!-- ======= Feed Section ======= -->
-  
-<div id ="main">
-
-  <!-- top three recipes -->
-  <div class = "container-sm text-center" style = "margin-top: 0px">
-    <h1>
-      POPULAR RECIPES
-    </h1>
-
-    <div id="recipe_super_div">
-      
-    </div>
-  </div>
-
-</div>
-
-<div class = "container-fluid text-center" id = "filters">
-  <div class = "row align-items-center" id="categories">
-    <a class = "col filter" id = "filter1" href="">
-      Filter by Cost
-    </a>
-    <a class = "col filter" id = "filter2" href="">
-      Filter by Prep Time
-    </a>
-    <a class = "col filter" id = "filter3" href="">
-      Filter by Ingredients
-    </a>
-    <a class = "col filter" id = "filter4" href="">
-      Filter by xxxx
-    </a>
-    <a class = "col filter" id = "filter5" href="">
-      Filter by xxxx
-    </a>
-  </div>
-</div>
-
-<div class = "container-md text-center">
-  <h2>
-    Other Recipes
-  </h2>
-
-  <div id = "other_recipes">
-
-  </div>
-</div>
+    <h1 style=" font-family: Trirong, serif; text-align: center;"  id="myHeader" >CURRENT RECIPE</h1>  
+    
     
 
+    <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list-->
+    
+
+    <div style="margin-left: 25%; " class="row">
+      <div class="col-lg-4">
+        <img  src="..//static/assets/img/food2.jpg"  class="img-fluid" id="tm1" alt="">
+      </div>
+      
+      <div class="col-lg-8 pt-4 pt-lg-0 content">
+        <p1 id="prepHeading">PREP TIME</p1> <p2 id="prepTime">&nbsp;</p2>
+        <div class="row"> 
+          <p3 id="cookHeading">COOK TIME</p3> <p4 id="cookTime"> &nbsp; </p4>
+          <p7 id="difficultyHeading">DIFFICULTY</p7> <p8 id="difficultyLevel"> </p8>
+          <p9 id="ingredientHeading">INGREDIENTS</p9>
+          <ul id="ingredientsList"></ul> <!-- Use this id to ouput the ingredients list--></div>
+        
+          </div>
+          
+        </div>
+      </div>
+    <br>
 
 
+        
+<div style="margin-left: 25%;" id="prepRecipeSteps">
+
+    <p11 id="preparationHead">PROCEDURE</p11>
+    <ul id="preperationSteps"></ul> <!-- Use this id to ouput the preparation steps-->
+    <p9 id="ingredientHeading">LINK TO YOUTUBE VIDEO</p9> 
+    <a id="yt_link" ></a>  <!-- Use this id to ouput the ingredients list-->
+   
+
+</div>
+<br>
+
+<div style="margin-left: 25%;" id="comment_section">
+
+  <p12 id="preparationHead">COMMENTS</p12>
   
-  <!-- ======= Footer ======= -->
-  <footer  id="footer">
+ 
+
+</div>
+<br>
+<div style="margin-left:25%;  float:right; margin-right:25%;" id ="author_link">
+  <a href="authors_page.html">Posted by </a>  <!-- add authors name through -->
+</div>
+<br>
+</div>
+
+
+
+
+
+<footer  id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright Recipe Reboot <strong><span></span></strong>. All Rights Reserved 
+        &copy; Copyright <strong><span></span></strong>. All Rights Reserved Recipe Reboot
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -155,9 +153,9 @@
   <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!--  Main JS File -->
-  <script type="module" src = "../static/assets/js/main.js">
-    
-  </script>
+  <script src="../static/assets/js/main.js"></script>
+
+
 </body>
 
 </html>

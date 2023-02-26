@@ -53,6 +53,13 @@
       </ul>
     </nav><!-- .navbar -->
 
+    <div id="search_bar">
+      <input type = "text" placeholder="Find Recipes">
+      <a href = "results_page.html">
+        <i class = "fa fa-search"></i>
+      </a>
+    </div>
+
     <div class="header-social-links">
       <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
       <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -91,6 +98,8 @@
         <form class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="">Please enter the name of your dish. <span class="text-muted"></span></label>
+            <input style=" margin-left: 12%; width:fit-content;" type="" class="form-control" id="" placeholder="">
+
             <input id="submit_name" style=" margin-left: 12%; width:fit-content;" type="" class="form-control" placeholder="">
             <div class="invalid-feedback">
               Please enter a valid pharmacy number.
@@ -138,6 +147,7 @@
                     Valid Year is required.
                   </div>
                 </div>
+
                 <div  class="col-md-6 mb-3">
                   <label  style="font-size:16px;" for="firstName">Cook Time (in mins)</label>
                   <input id="submit_cook_time" style="margin-left: 10%; width:60%;"  type="text" class="form-control" id="firstName" placeholder="" value="" required>
@@ -176,6 +186,7 @@
             <button id="submission_button" style="margin-right:20%; float:right; padding-bottom:10px;" type="button">Save</button> 
           </div>                        
         </form>
+
       </div>
           
     </div>
