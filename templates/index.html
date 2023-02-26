@@ -156,7 +156,7 @@
     function generate_food_div(index) {
       return `<div class = 'col food_div' id = 'recipe1' >
         <div id = 'recipe_image'>
-          <img class = 'img-fluid food_image' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
+          <img class = 'img-fluid flood-image' id = 'recipe_image_` + index + `' src = '../static/assets/img/food2.jpg'>
           </img>
           <div class = 'row align-items-center' id = 'likes'>
             <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
@@ -194,6 +194,9 @@
 
         const recipe_likes = "num_likes_" + index
         $('#' + recipe_likes).html(recipes[i].likes)
+
+        const recipe_image = "recipe_image_" + index
+        $('#' + recipe_image).attr("src", recipes[i].image_link)
 
         const like_button = "heart_" + index;
         $('#' + like_button).click(

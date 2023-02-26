@@ -47,7 +47,7 @@ def get_image(image_name):
 
 xs = []
 
-with open("recipes.json", "r") as infile:
+with open("recipes_500.json", "r") as infile:
     data = json.load(infile)
 
     for recipe in data['recipes']:
