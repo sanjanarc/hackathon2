@@ -81,7 +81,14 @@
 #recipe_image {
   position: relative;
   object-fit: cover;
-  height: 500px;
+  height: 400px;
+  width: 180px;
+}
+
+#other_recipe_image {
+  position: relative;
+  object-fit: cover;
+  height: 200px;
   width: 180px;
 }
 
