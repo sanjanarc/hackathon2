@@ -53,21 +53,22 @@
 
     </nav><!-- .navbar -->
 
+    <div id="search_bar">
+      <input id="search_value" type = "text" placeholder="Find Recipes">
+      <a href = "#">
+        <i class = "fa fa-search"></i>
+      </a>
+    </div>
 
 
     <div class="header-favourites">
       <a  href="#"  onclick=""><i style="color:#064420; font-size: 20px;" class="bi bi-star"></i></a>
       
-      
-
-      <input type = "text" id="search_value" placeholder="Find Recipes">
-      <i class = "fa fa-search"></i>
 
     </div>
 
 
-    <div>
-    </div>
+    
   </div>
 
 </header><!-- End Header -->
@@ -80,10 +81,12 @@
 
   <!-- top three recipes -->
   <div class = "container-sm text-center" style = "margin-top: 0px">
-    <h1>
+    <h1 id = "title_div">
       POPULAR RECIPES
     </h1>
+
     <div id="recipe_super_div">
+      
     </div>
   </div>
 
@@ -113,6 +116,10 @@
   <h2>
     Other Recipes
   </h2>
+
+  <div id = "other_recipes">
+
+  </div>
 </div>
     
 
@@ -147,6 +154,7 @@
   <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!--  Main JS File -->
+
   <script type="module">
     import database from "../static/assets/js/res/database_parsing/queries.js"
 
