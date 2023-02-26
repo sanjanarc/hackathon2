@@ -154,8 +154,111 @@
   <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!--  Main JS File -->
-  <script type="module" src = "../static/assets/js/main.js">
-    
+
+  <script type="module">
+    import database from "../static/assets/js/res/database_parsing/queries.js"
+
+    // Generates a food 
+    function generate_food_div(index) {
+      return `<div class = 'col food_div' id = 'recipe_` + index + `'>
+        <div id = 'recipe_image'>
+          <a id = 'recipe_link_` + index + `'>
+          <img class = 'img-fluid food_image' id ='recipe_image_` + index + `' src = '../static/assets/img/food2.jpg'>
+          </img>
+          <a>
+          <div class = 'row align-items-center' id = 'likes'>
+            <a class='like_button' id = 'like_button_` + index + `' data-gallery='portfolioGallery' class='col feed-lightbox'>
+              <span id = 'heart'` + index + `>
+                <i class='fa  fa-heart-o fa-3x' id='heart_` + index + `'' aria-hidden='true' >
+                </i> 
+              </span>
+            </a>
+            <div class='like-counter' id = 'num_likes_` + index + `'>
+            </div>
+          </div>
+        </div> 
+        <h class='recipe_name' id = 'recipe_title_` + index + `'>
+        </h>
+      </div>`
+    }
+
+    function load_recipe(recipes) {
+      let food_div = $("#recipe_super_div");
+      let total_text = "";
+
+      //Adds the row organizer
+      total_text += "<div class = 'row align-items-start food_row_maker' id = 'selectors'>"
+      for (let i = 0; i < recipes.length; i++) {
+        total_text += generate_food_div((i + 1));
+      }
+      total_text += "</div>"
+      food_div.html(total_text);
+
+      // Adds the recipes
+      for (let i = 0; i < recipes.length; i++) {
+        const index = i + 1;
+
+        // Sets the recipes name
+        const recipe_title = "recipe_title_" + index
+        $('#' + recipe_title).html(recipes[i].name)
+
+        // Sets the likes
+        const recipe_likes = "num_likes_" + index
+        $('#' + recipe_likes).html(recipes[i].likes)
+        
+        const recipe_image = "recipe_image_" + index
+        $('#' + recipe_image).attr("src", recipes[i].image_link)
+
+        // Enables clicking
+        const like_span = "#heart" + index;
+        const like_button = "#heart_" + index;
+        $(like_button).click(
+          function() {
+            console.log("Clicked")
+            let the_index = index; 
+            if ($(like_button).hasClass("fa-heart")) {
+              $(like_button).removeClass("fa-heart");
+              $(like_button).addClass("fa-heart-o");
+
+              database.unlike_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            } else {
+              $(like_button).addClass("fa-heart");
+              $(like_button).removeClass("fa-heart-o");
+
+              database.like_recipe(recipes[i].name);
+              let recipe_likes = "#num_likes_" + the_index
+              $(recipe_likes).html(recipes[i].likes)
+            }
+
+
+          }
+        )
+
+        //Sets the href
+        const recipe_link_ = '#recipe_link_' + index;
+        let new_link = recipes[i].name;
+        new_link = new_link.replaceAll(" ", ".")
+
+        $(recipe_link_).attr("href", "recipes_page.html?" + new_link)
+      }
+    }
+
+    export function load_all_recipes() {
+      // Gets all the recipes
+      load_recipe(database.get_all_recipes());
+    }
+
+    $('#search_value').change(
+      function() {
+        const content = $('#search_value').val()
+        let all_recipes = database.get_all_recipes();
+        let recipes = database.filter_name(all_recipes, content)
+        load_recipe(recipes)
+      }
+    )
+    window.onload = load_all_recipes();
   </script>
 </body>
 
