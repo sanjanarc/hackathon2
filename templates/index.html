@@ -155,7 +155,7 @@
       return `<div class = 'col food_div' id = 'recipe_` + index + `'>
         <div id = 'recipe_image'>
           <a id = 'recipe_link_` + index + `'>
-          <img class = 'img-fluid food_image' id = 'recipe_image' src = '../static/assets/img/food2.jpg'>
+          <img class = 'img-fluid food_image' id ='recipe_image_` + index + `' src = '../static/assets/img/food2.jpg'>
           </img>
           <a>
           <div class = 'row align-items-center' id = 'likes'>
@@ -197,10 +197,7 @@
         // Sets the likes
         const recipe_likes = "num_likes_" + index
         $('#' + recipe_likes).html(recipes[i].likes)
-
-        const recipe_image = "recipe_image_" + index
-        $('#' + recipe_image).attr("src", recipes[i].image_link)
-
+        
         const recipe_image = "recipe_image_" + index
         $('#' + recipe_image).attr("src", recipes[i].image_link)
 
